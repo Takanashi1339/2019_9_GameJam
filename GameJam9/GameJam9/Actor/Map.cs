@@ -13,7 +13,7 @@ namespace GameJam9.Actor
 {
     class Map
     {
-        public const int BlockSize = 64;
+        public const int BlockSize = 32;
         public string Name
         {
             get;
@@ -105,7 +105,7 @@ namespace GameJam9.Actor
                     var x = mapList[y].IndexOf(before);
                     if (x >= 0)
                     {
-                        mapList[y][x] = after.Set(this, after.Positon);
+                        mapList[y][x] = after.Set(this, after.Position);
                     }
                 }
             }

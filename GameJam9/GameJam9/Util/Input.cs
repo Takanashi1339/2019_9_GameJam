@@ -13,6 +13,11 @@ namespace GameJam9.Util
     /// </summary>
     static class Input
     {
+        //移動キー
+        private static readonly Keys Up = Keys.W;
+        private static readonly Keys Down = Keys.S;
+        private static readonly Keys Left = Keys.A;
+        private static readonly Keys Right = Keys.D;
         //移動量
         private static Vector2 velocity = Vector2.Zero;
         //キーボード
@@ -53,22 +58,22 @@ namespace GameJam9.Util
             velocity = Vector2.Zero;
 
             //右
-            if (currentKey.IsKeyDown(Keys.Right))
+            if (currentKey.IsKeyDown(Right))
             {
                 velocity.X += 1.0f;
             }
             //左
-            if (currentKey.IsKeyDown(Keys.Left))
+            if (currentKey.IsKeyDown(Left))
             {
                 velocity.X -= 1.0f;
             }
             //上
-            if (currentKey.IsKeyDown(Keys.Up))
+            if (currentKey.IsKeyDown(Up))
             {
                 velocity.Y -= 1.0f;
             }
             //下
-            if (currentKey.IsKeyDown(Keys.Down))
+            if (currentKey.IsKeyDown(Down))
             {
                 velocity.Y += 1.0f;
             }
