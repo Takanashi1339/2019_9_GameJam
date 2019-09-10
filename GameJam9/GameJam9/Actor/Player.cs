@@ -22,7 +22,7 @@ namespace GameJam9.Actor
         }
 
         public Player(Player other)
-            :this(other.Positon)
+            :this(other.Position)
         { }
 
         public override object Clone()
@@ -36,14 +36,15 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            if(Input.GetKeyTrigger(Keys.W) && isJump)
+            var velocity = Velocity;
+            if (Input.GetKeyTrigger(Keys.W) && isJump)
             {
-                var velocity = Velocity;
                 velocity.Y = -10.0f;//仮の移動量
-                Velocity = velocity;
                 isJump = true;
             }
-            if(Velocity.X > 0)
+            velocity.X = Input.Velocity().X;
+            Velocity = velocity;
+            if (Velocity.X > 0)
             {
                 isLeft = false;
             }
@@ -54,6 +55,40 @@ namespace GameJam9.Actor
             base.Update(gameTime);
         }
 
+        private void HitBlock(GameObject gameObject)
+        {
+            Direction direction = CheckDirection(gameObject);
+            var position = Position;
+            var velocity = Velocity;
+
+            if(direction == Direction.Top)
+            {
+                if(Position.Y > 0f)
+                {
+                    position.Y = gameObject.Rectangle.Top;
+                    velocity.Y = 0f;
+                    isJump = false;
+                }
+            }
+            else if(direction == Direction.Right)
+            {
+                position.X = gameObject.Rectangle.Right;
+            }
+            else if(direction == Direction.Left)
+            {
+                position.X = gameObject.Rectangle.Left - Width;
+            }
+            else if(direction == Direction.Bottom)
+            {
+                position.Y = gameObject.Rectangle.Bottom;
+                if(isJump)
+                {
+                    velocity.Y = 0.0f;
+                }
+            }
+            Position = position;
+            Velocity = velocity;
+        }
 
         public override void Draw()
         {
