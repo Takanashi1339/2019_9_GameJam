@@ -8,7 +8,7 @@ namespace GameJam9.Def
 {
     static class Screen
     {
-        public static readonly int Width = 800;
-        public static readonly int Height = 450;
+        public static readonly int Width = 1200;
+        public static readonly int Height = 675;
     }
 }
