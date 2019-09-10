@@ -54,6 +54,11 @@ namespace GameJam9.Manager
             {
                 instance.addGameObjects.Clear();
             }
+
+            if (Map != null)
+            {
+                Map = null;
+            }
         }
 
         public void Add(GameObject obj)

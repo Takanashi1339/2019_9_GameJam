@@ -10,7 +10,7 @@ namespace GameJam9.Actor
 {
     abstract class Entity : GameObject
     {
-        public static readonly float Gravity = 0.4f;
+        public static readonly float Gravity = 0.3f;
         public static readonly float MaxFallSpeed = 9.8f;
 
         public Entity(string name, Vector2 position, Point size)
@@ -27,9 +27,21 @@ namespace GameJam9.Actor
 
         public override void Hit(GameObject gameObject)
         {
-            if (gameObject is Block block)
+            Direction dir = CheckDirection(gameObject);
+
+            if (gameObject is Block block && block.IsSolid)
             {
                 CorrectPosition(block);
+                var velocity = Velocity;
+                if (dir == Direction.Top)
+                {
+                    velocity.Y = 0.0f;
+                }
+                else if (dir == Direction.Bottom)
+                {
+                    velocity.Y = 0.0f;
+                }
+                Velocity = velocity;
             }
         }
 

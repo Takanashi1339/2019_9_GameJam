@@ -15,7 +15,7 @@ namespace GameJam9.Actor
         private bool isJump;
         private bool isLeft;
         public Player(Vector2 position)
-            : base("test_player", position , new Point(64 , 64))
+            : base("test_player", position , new Point(32 , 64))
         {
             isJump = true;
             isLeft = false;
