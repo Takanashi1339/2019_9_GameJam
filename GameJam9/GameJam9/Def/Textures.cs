@@ -16,6 +16,8 @@ namespace GameJam9.Def
         public static readonly string[,] Data = new string[,]
             {
                 //{ "texture_name", Path},
+                { "test_block", Path },
+                { "test_player", Path}
 
                 //必要に応じて自分で追加
             };
