@@ -43,15 +43,13 @@ namespace GameJam9.Scene
             next = Scene.Ending;
 
             // csvからマップを読み込む場合
-            /*
             var reader = GameDevice.Instance().GetCSVReader();
-            reader.Read("map_name.csv");
+            reader.Read("Maptest.csv");
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
-            */
 
             //空のマップ
-            gameObjectManager.Add(new Map(new List<string[]>()));
+            //gameObjectManager.Add(new Map(new List<string[]>()));
         }
 
         public bool IsEnd()
