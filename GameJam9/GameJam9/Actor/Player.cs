@@ -22,7 +22,7 @@ namespace GameJam9.Actor
         }
 
         public Player(Player other)
-            :this(other.Positon)
+            :this(other.Position)
         { }
 
         public override object Clone()
