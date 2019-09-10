@@ -15,7 +15,7 @@ namespace GameJam9.Actor
         private bool isJump;
         private bool isLeft;
         public Player(Vector2 position)
-            : base("test_player", position , new Point(32 , 64))
+            : base("test_player", position , new Point(64 , 64))
         {
             isJump = true;
             isLeft = false;
@@ -28,10 +28,6 @@ namespace GameJam9.Actor
         public override object Clone()
         {
             return new Player(this);
-        }
-
-        public override void Hit(GameObject gameObject)
-        {
         }
 
         public override void Update(GameTime gameTime)
@@ -53,41 +49,6 @@ namespace GameJam9.Actor
                 isLeft = true;
             }
             base.Update(gameTime);
-        }
-
-        private void HitBlock(GameObject gameObject)
-        {
-            Direction direction = CheckDirection(gameObject);
-            var position = Position;
-            var velocity = Velocity;
-
-            if(direction == Direction.Top)
-            {
-                if(Position.Y > 0f)
-                {
-                    position.Y = gameObject.Rectangle.Top;
-                    velocity.Y = 0f;
-                    isJump = false;
-                }
-            }
-            else if(direction == Direction.Right)
-            {
-                position.X = gameObject.Rectangle.Right;
-            }
-            else if(direction == Direction.Left)
-            {
-                position.X = gameObject.Rectangle.Left - Width;
-            }
-            else if(direction == Direction.Bottom)
-            {
-                position.Y = gameObject.Rectangle.Bottom;
-                if(isJump)
-                {
-                    velocity.Y = 0.0f;
-                }
-            }
-            Position = position;
-            Velocity = velocity;
         }
 
         public override void Draw()

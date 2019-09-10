@@ -41,6 +41,7 @@ namespace GameJam9.Scene
         {
             isEndFlag = false;
             next = Scene.Ending;
+            gameObjectManager.Initialize();
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();

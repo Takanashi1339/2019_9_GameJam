@@ -10,6 +10,9 @@ namespace GameJam9.Actor
 {
     abstract class Entity : GameObject
     {
+        public static readonly float Gravity = 0.4f;
+        public static readonly float MaxFallSpeed = 9.8f;
+
         public Entity(string name, Vector2 position, Point size)
             : base(name, position, size)
         {
@@ -28,6 +31,18 @@ namespace GameJam9.Actor
             {
                 CorrectPosition(block);
             }
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            var velocity = Velocity;
+            velocity.Y += Gravity;
+            if (velocity.Y > MaxFallSpeed)
+            {
+                velocity.Y = MaxFallSpeed;
+            }
+            Velocity = velocity;
+            base.Update(gameTime);
         }
     }
 }
