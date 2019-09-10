@@ -49,6 +49,9 @@ namespace GameJam9.Scene
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
             */
+
+            //空のマップ
+            gameObjectManager.Add(new Map(new List<string[]>()));
         }
 
         public bool IsEnd()

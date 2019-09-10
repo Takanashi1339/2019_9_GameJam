@@ -34,7 +34,7 @@ namespace GameJam9.Manager
 
         public void Initialize()
         {
-            var instance = new GameObjectManager();
+            var instance = this;
             Instance = instance;
 
             if (instance.gameObjects == null)
