@@ -46,6 +46,7 @@
     <Compile Include="Actor\GameObject.cs" />
     <Compile Include="Actor\Map.cs" />
     <Compile Include="Actor\Particle.cs" />
+    <Compile Include="Actor\Player.cs" />
     <Compile Include="Actor\Space.cs" />
     <Compile Include="Def\MapDictionary.cs" />
     <Compile Include="Def\Screen.cs" />
