@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJam9", "GameJam9\GameJam9.csproj", "{E99E91E4-D0F3-4690-9AA7-57E655F6E051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E99E91E4-D0F3-4690-9AA7-57E655F6E051}.Debug|x86.ActiveCfg = Debug|x86
+		{E99E91E4-D0F3-4690-9AA7-57E655F6E051}.Debug|x86.Build.0 = Debug|x86
+		{E99E91E4-D0F3-4690-9AA7-57E655F6E051}.Release|x86.ActiveCfg = Release|x86
+		{E99E91E4-D0F3-4690-9AA7-57E655F6E051}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E688AA8-DCB5-4A70-B9C5-614790424822}
+	EndGlobalSection
+EndGlobal
