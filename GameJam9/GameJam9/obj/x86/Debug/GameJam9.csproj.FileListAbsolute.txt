@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\GameJam9.exe
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\GameJam9.pdb
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\MonoGame.Framework.dll
@@ -21,3 +22,28 @@ D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJa
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csproj.CopyComplete
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
+=======
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\GameJam9.exe
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\GameJam9.pdb
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csproj.CoreCompileInputs.cache
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csproj.CopyComplete
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
+C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
+>>>>>>> Stashed changes
