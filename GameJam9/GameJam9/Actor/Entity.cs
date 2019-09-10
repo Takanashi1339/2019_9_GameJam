@@ -17,9 +17,17 @@ namespace GameJam9.Actor
 
         public virtual Entity Spawn(Map map, Vector2 position)
         {
-            Positon = position;
+            Position = position;
             GameObjectManager.Instance.Add(this);
             return this;
+        }
+
+        public override void Hit(GameObject gameObject)
+        {
+            if (gameObject is Block block)
+            {
+                CorrectPosition(block);
+            }
         }
     }
 }

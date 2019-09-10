@@ -24,7 +24,7 @@ namespace GameJam9.Actor
 
         public virtual Block Set(Map map, Vector2 position)
         {
-            Positon = position;
+            Position = position;
             return this;
         }
     }

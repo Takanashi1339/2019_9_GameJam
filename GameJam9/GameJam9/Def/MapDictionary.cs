@@ -15,7 +15,7 @@ namespace GameJam9.Def
         {
             Data = new Dictionary<string, GameObject>();
             Data.Add("0", new Space());
-
+            Data.Add("1", new TestBlock());
             //ここにEntity/Blockを追加
         }
     }

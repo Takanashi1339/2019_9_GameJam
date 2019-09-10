@@ -10,9 +10,17 @@ using System.Threading.Tasks;
 
 namespace GameJam9.Actor
 {
+    enum Direction
+    {
+        Top,
+        Bottom,
+        Left,
+        Right
+    }
+
     abstract class GameObject : ICloneable
     {
-        public Vector2 Positon
+        public Vector2 Position
         {
             get;
             set;
@@ -60,7 +68,7 @@ namespace GameJam9.Actor
         {
             get
             {
-                return new Rectangle(Positon.ToPoint(), Size);
+                return new Rectangle(Position.ToPoint(), Size);
             }
         }
 
@@ -73,7 +81,7 @@ namespace GameJam9.Actor
         public GameObject(string name, Vector2 position, Point size)
         {
             Name = name;
-            Positon = position;
+            Position = position;
             Size = size;
             Initialize();
         }
@@ -87,7 +95,7 @@ namespace GameJam9.Actor
 
         public virtual void Update(GameTime gameTime)
         {
-            Positon += Velocity;
+            Position += Velocity;
         }
 
         public bool IsCollision(GameObject other)
@@ -112,7 +120,44 @@ namespace GameJam9.Actor
         /// <param name="drawer">Drawer</param>
         protected void Draw(Drawer drawer)
         {
-            Renderer.Instance.DrawTexture(Name, Positon, drawer);
+            Renderer.Instance.DrawTexture(Name, Position, drawer);
+        }
+
+        public Direction CheckDirection(GameObject otherObj)
+        {
+            var thisRect = Rectangle;
+            var otherRect = otherObj.Rectangle;
+            var dic = new Dictionary<Direction, int>();
+            dic.Add(Direction.Right, Math.Abs(thisRect.Left - otherRect.Right));
+            dic.Add(Direction.Left, Math.Abs(thisRect.Right - otherRect.Left));
+            dic.Add(Direction.Top, Math.Abs(thisRect.Bottom - otherRect.Top));
+            dic.Add(Direction.Bottom, Math.Abs(thisRect.Top - otherRect.Bottom));
+            var dir = dic.OrderBy(pair => pair.Value).First().Key;
+            return dir;
+        }
+
+        public virtual void CorrectPosition(GameObject other)
+        {
+            Direction dir = CheckDirection(other);
+            var position = Position;
+
+            if (dir == Direction.Top)
+            {
+                position.Y = other.Rectangle.Top - Size.Y;
+            }
+            else if (dir == Direction.Right)
+            {
+                position.X = other.Rectangle.Right;
+            }
+            else if (dir == Direction.Left)
+            {
+                position.X = other.Rectangle.Left - Size.X;
+            }
+            else if (dir == Direction.Bottom)
+            {
+                position.Y = other.Rectangle.Bottom;
+            }
+            Position = position;
         }
     }
 }

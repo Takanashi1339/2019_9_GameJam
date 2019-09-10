@@ -48,6 +48,7 @@
     <Compile Include="Actor\Particle.cs" />
     <Compile Include="Actor\Player.cs" />
     <Compile Include="Actor\Space.cs" />
+    <Compile Include="Actor\TestBlock.cs" />
     <Compile Include="Def\MapDictionary.cs" />
     <Compile Include="Def\Screen.cs" />
     <Compile Include="Def\Sounds.cs" />
