@@ -25,17 +25,13 @@ namespace GameJam9.Actor
         public UI(string name, Vector2 position, Point size, int frame, float time, Animation.AnimationType animationType = Animation.AnimationType.Horizontal)
             : base(name, position, size)
         {
-            animation = new Animation(size, frame, time, false, animationType);
+            animation = new Animation(size, frame, time, true, animationType);
             UIManager.Instance.Add(this);
         }
 
         public override void Update(GameTime gameTime)
         {
             animation.Update(gameTime);
-            if (animation.IsEnd)
-            {
-                IsDead = true;
-            }
             base.Update(gameTime);
         }
 

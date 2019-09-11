@@ -16,6 +16,7 @@ namespace GameJam9.Scene
     {
         private bool isEndFlag;
         private Scene next;
+        private Clock clock;
 
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
@@ -31,7 +32,7 @@ namespace GameJam9.Scene
 
         public void Draw()
         {
-            GameDevice.Instance().GetGraphicsDevice().Clear(Color.Blue);
+            GameDevice.Instance().GetGraphicsDevice().Clear(clock.BackGroundColor);
 
             Renderer.Instance.Begin();
             gameObjectManager.Draw();
@@ -45,12 +46,15 @@ namespace GameJam9.Scene
             isEndFlag = false;
             next = Scene.Ending;
             gameObjectManager.Initialize();
+            particleManager.Initialize();
+            uiManager.Initialize();
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();
             reader.Read("Maptest.csv");
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
+            clock = new Clock(new Vector2(0, 0));
 
             //空のマップ
             //gameObjectManager.Add(new Map(new List<string[]>()));
