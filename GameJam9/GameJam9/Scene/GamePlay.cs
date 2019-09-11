@@ -19,12 +19,14 @@ namespace GameJam9.Scene
 
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
+        private UIManager uiManager;
 
         public GamePlay()
         {
             isEndFlag = false;
             gameObjectManager = new GameObjectManager();
             particleManager = new ParticleManager();
+            uiManager = new UIManager();
         }
 
         public void Draw()
@@ -34,6 +36,7 @@ namespace GameJam9.Scene
             Renderer.Instance.Begin();
             gameObjectManager.Draw();
             particleManager.Draw();
+            uiManager.Draw();
             Renderer.Instance.End();
         }
 
@@ -85,6 +88,7 @@ namespace GameJam9.Scene
 
             gameObjectManager.Update(gameTime);
             particleManager.Update(gameTime);
+            uiManager.Update(gameTime);
         }
     }
 }

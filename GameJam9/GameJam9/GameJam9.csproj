@@ -49,6 +49,7 @@
     <Compile Include="Actor\Player.cs" />
     <Compile Include="Actor\Space.cs" />
     <Compile Include="Actor\TestBlock.cs" />
+    <Compile Include="Actor\UI.cs" />
     <Compile Include="Def\MapDictionary.cs" />
     <Compile Include="Def\Screen.cs" />
     <Compile Include="Def\Sounds.cs" />
@@ -65,8 +66,10 @@
     <Compile Include="Manager\Interface\IGameObjectMediator.cs" />
     <Compile Include="Manager\Interface\IParticleMediator.cs" />
     <Compile Include="Manager\Interface\ISceneMediator.cs" />
+    <Compile Include="Manager\Interface\IUIMediator.cs" />
     <Compile Include="Manager\ParticleManager.cs" />
     <Compile Include="Manager\SceneManager.cs" />
+    <Compile Include="Manager\UIManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scene\Ending.cs" />
