@@ -16,7 +16,7 @@
 #begin CSV/Maptest.csv
 /copy:CSV/Maptest.csv
 
-#begin Texture/Clock.png
+#begin Texture/clock.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -26,9 +26,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Texture/Clock.png
+/build:Texture/clock.png
 
-#begin Texture/Needle.png
+#begin Texture/clock_hand.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -38,7 +38,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Texture/Needle.png
+/build:Texture/clock_hand.png
 
 #begin Texture/test_block.png
 /importer:TextureImporter

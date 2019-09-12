@@ -13,7 +13,13 @@ namespace GameJam9.Util
     /// </summary>
     class Drawer
     {
-        public static readonly Drawer Default = new Drawer();
+        public static Drawer Default
+        {
+            get
+            {
+                return new Drawer();
+            }
+        }
 
         public Rectangle? Rectangle = null;
         public Color Color = Color.White;

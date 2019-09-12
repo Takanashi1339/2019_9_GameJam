@@ -1,5 +1,12 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+<<<<<<< HEAD
 "C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/Clock.png","C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/Clock.xnb","TextureProcessor","Texture2DContent",2161,65621,0.281176
 "C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/Needle.png","C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/Needle.xnb","TextureProcessor","Texture2DContent",1106,65621,0
 "C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_block.png","C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_block.xnb","TextureProcessor","Texture2DContent",173,4181,0.0156123
 "C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_player.png","C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_player.xnb","TextureProcessor","Texture2DContent",460,8277,0
+=======
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock.xnb","TextureProcessor","Texture2DContent",2161,65621,0.1093489
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock_hand.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock_hand.xnb","TextureProcessor","Texture2DContent",1106,65621,0
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_block.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_block.xnb","TextureProcessor","Texture2DContent",173,4181,0.015622
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_player.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_player.xnb","TextureProcessor","Texture2DContent",460,8277,0
+>>>>>>> master

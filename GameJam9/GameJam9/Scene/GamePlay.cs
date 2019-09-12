@@ -16,24 +16,28 @@ namespace GameJam9.Scene
     {
         private bool isEndFlag;
         private Scene next;
+        private Clock clock;
 
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
+        private UIManager uiManager;
 
         public GamePlay()
         {
             isEndFlag = false;
             gameObjectManager = new GameObjectManager();
             particleManager = new ParticleManager();
+            uiManager = new UIManager();
         }
 
         public void Draw()
         {
-            GameDevice.Instance().GetGraphicsDevice().Clear(Color.Blue);
+            GameDevice.Instance().GetGraphicsDevice().Clear(clock.BackGroundColor);
 
             Renderer.Instance.Begin();
             gameObjectManager.Draw();
             particleManager.Draw();
+            uiManager.Draw();
             Renderer.Instance.End();
         }
 
@@ -42,12 +46,15 @@ namespace GameJam9.Scene
             isEndFlag = false;
             next = Scene.Ending;
             gameObjectManager.Initialize();
+            particleManager.Initialize();
+            uiManager.Initialize();
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();
             reader.Read("Maptest.csv");
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
+            clock = new Clock(new Vector2(0, 0));
 
             //空のマップ
             //gameObjectManager.Add(new Map(new List<string[]>()));
@@ -85,6 +92,7 @@ namespace GameJam9.Scene
 
             gameObjectManager.Update(gameTime);
             particleManager.Update(gameTime);
+            uiManager.Update(gameTime);
         }
     }
 }
