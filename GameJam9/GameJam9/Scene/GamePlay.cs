@@ -21,6 +21,7 @@ namespace GameJam9.Scene
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
         private UIManager uiManager;
+        private BackGround[] backGrounds;
 
         public GamePlay()
         {
@@ -35,6 +36,7 @@ namespace GameJam9.Scene
             GameDevice.Instance().GetGraphicsDevice().Clear(clock.BackGroundColor);
 
             Renderer.Instance.Begin();
+            Array.ForEach(backGrounds, bg => bg.Draw());
             gameObjectManager.Draw();
             particleManager.Draw();
             uiManager.Draw();
@@ -55,6 +57,11 @@ namespace GameJam9.Scene
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
             clock = new Clock(new Vector2(0, 0));
+            backGrounds = new BackGround[] {
+                new BackGround1(Vector2.Zero),
+                new BackGround2(Vector2.Zero),
+                new BackGround3(Vector2.Zero)
+            };
 
             //空のマップ
             //gameObjectManager.Add(new Map(new List<string[]>()));
@@ -90,6 +97,7 @@ namespace GameJam9.Scene
                 next = Scene.GameOver;
             }
 
+            Array.ForEach(backGrounds, bg => bg.Update(gameTime));
             gameObjectManager.Update(gameTime);
             particleManager.Update(gameTime);
             uiManager.Update(gameTime);

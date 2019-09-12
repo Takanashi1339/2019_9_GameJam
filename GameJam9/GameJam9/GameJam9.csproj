@@ -41,6 +41,10 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Actor\BackGround.cs" />
+    <Compile Include="Actor\BackGround1.cs" />
+    <Compile Include="Actor\BackGround2.cs" />
+    <Compile Include="Actor\BackGround3.cs" />
     <Compile Include="Actor\Block.cs" />
     <Compile Include="Actor\Clock.cs" />
     <Compile Include="Actor\Enemy.cs" />
