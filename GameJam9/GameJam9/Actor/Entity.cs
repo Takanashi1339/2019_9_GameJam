@@ -40,7 +40,7 @@ namespace GameJam9.Actor
                 }
                 else if (dir == Direction.Bottom)
                 {
-                    velocity.Y = 0.0f;
+                    velocity.Y = 0.01f;
                 }
                 Velocity = velocity;
             }
