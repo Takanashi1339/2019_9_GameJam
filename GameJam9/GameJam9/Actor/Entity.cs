@@ -34,15 +34,21 @@ namespace GameJam9.Actor
                 Direction dir = CheckDirection(block);
                 CorrectPosition(block);
                 var velocity = Velocity;
+                var position = Position;
                 if (dir == Direction.Top)
                 {
-                    velocity.Y = 0.0f;
+                    if(position.Y > 0)
+                    {
+                        position.Y = gameObject.Rectangle.Top - Height;
+                        velocity.Y = 0.0f;
+                    }
                 }
                 else if (dir == Direction.Bottom)
                 {
-                    velocity.Y = 0.01f;
+                    velocity.Y = 0.0f;
                 }
                 Velocity = velocity;
+                Position = position;
             }
         }
 
