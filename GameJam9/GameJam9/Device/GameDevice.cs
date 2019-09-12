@@ -22,7 +22,10 @@ namespace GameJam9.Device
         private GameTime gameTime;
         private CSVReader reader;
 
-        private Vector2 displayModify;
+        public Vector2 DisplayModify {
+            get;
+            set;
+        }
 
         private static GameDevice instance;
 
@@ -32,7 +35,7 @@ namespace GameJam9.Device
             random = new Random();
             this.content = content;
             this.graphics = graphics;
-            displayModify = Vector2.Zero;
+            DisplayModify = Vector2.Zero;
             reader = new CSVReader();
         }
 
@@ -118,16 +121,6 @@ namespace GameJam9.Device
         public GameTime GetGameTime()
         {
             return gameTime;
-        }
-
-        public void SetDisplayModify(Vector2 position)
-        {
-            this.displayModify = position;
-        }
-
-        public Vector2 GetDisplayModify()
-        {
-            return displayModify;
         }
     }
 }

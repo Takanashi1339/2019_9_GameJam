@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameJam9.Util;
 using Microsoft.Xna.Framework;
 
 namespace GameJam9.Actor
@@ -21,6 +22,12 @@ namespace GameJam9.Actor
         {
             IsSolid = isSolid;
         }
+        protected override void Draw(Drawer drawer)
+        {
+            drawer.DisplayModify = true;
+            base.Draw(drawer);
+        }
+
 
         public virtual Block Set(Map map, Vector2 position)
         {

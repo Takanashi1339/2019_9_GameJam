@@ -118,7 +118,7 @@ namespace GameJam9.Actor
         /// 引数無しのDrawメソッドから呼び出す
         /// </summary>
         /// <param name="drawer">Drawer</param>
-        protected void Draw(Drawer drawer)
+        protected virtual void Draw(Drawer drawer)
         {
             Renderer.Instance.DrawTexture(Name, Position, drawer);
         }

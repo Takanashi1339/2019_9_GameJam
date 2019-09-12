@@ -85,7 +85,10 @@ namespace GameJam9.Device
             {
                 spriteBatch.Draw(
                     textures[assetName], //テクスチャ
-                    position + drawer.Origin,
+                    position + drawer.Origin
+                        + ((drawer.DisplayModify)
+                            ? GameDevice.Instance().DisplayModify 
+                            : Vector2.Zero),
                     drawer.Rectangle,
                     drawer.Color * drawer.Alpha,
                     drawer.Rotation,

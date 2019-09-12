@@ -7,6 +7,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using GameJam9.Util;
+using GameJam9.Def;
+using GameJam9.Device;
+using GameJam9.Manager;
 
 namespace GameJam9.Actor
 {
@@ -60,6 +63,15 @@ namespace GameJam9.Actor
                 isLeft = true;
             }
             base.Update(gameTime);
+
+            UpdateDisplayModify();
+        }
+
+        public override void Hit(GameObject gameObject)
+        {
+            base.Hit(gameObject);
+
+            UpdateDisplayModify();
         }
 
         public override void Draw()
@@ -74,6 +86,22 @@ namespace GameJam9.Actor
                 drawer.SpriteEffects = SpriteEffects.FlipHorizontally;
             }
             base.Draw(drawer);
+        }
+
+        private void UpdateDisplayModify()
+        {
+            if (Position.X - Screen.Width / 2 + Size.X / 2 < 0)
+            {
+                GameDevice.Instance().DisplayModify = Vector2.Zero;
+                return;
+            }
+
+            if (Position.X + Screen.Width / 2 + Size.X / 2 > GameObjectManager.Instance.Map.Width)
+            {
+                GameDevice.Instance().DisplayModify = new Vector2(-1 * (GameObjectManager.Instance.Map.Width - Screen.Width), 0);
+                return;
+            }
+            GameDevice.Instance().DisplayModify = new Vector2(-Position.X + (Screen.Width / 2 - Size.X / 2), 0.0f);
         }
     }
 }

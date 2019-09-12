@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using GameJam9.Manager;
+using GameJam9.Util;
 
 namespace GameJam9.Actor
 {
@@ -43,6 +44,12 @@ namespace GameJam9.Actor
                 }
                 Velocity = velocity;
             }
+        }
+
+        protected override void Draw(Drawer drawer)
+        {
+            drawer.DisplayModify = true;
+            base.Draw(drawer);
         }
 
         public override void Update(GameTime gameTime)

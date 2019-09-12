@@ -29,5 +29,6 @@ namespace GameJam9.Util
         public Vector2 Scale = Vector2.One;
         public SpriteEffects SpriteEffects = SpriteEffects.None;
         public float LayerDepth = 0.0f;
+        public bool DisplayModify = false;
     }
 }
