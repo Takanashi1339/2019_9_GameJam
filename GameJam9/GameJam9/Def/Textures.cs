@@ -20,7 +20,10 @@ namespace GameJam9.Def
                 { "test_player", Path},
                 { "clock", Path },
                 { "clock_hand", Path },
-                { "test_enemy", Path}
+                { "test_enemy", Path},
+                { "BG1", Path},
+                { "BG2", Path},
+                { "BG3", Path}
 
                 //必要に応じて自分で追加
             };
