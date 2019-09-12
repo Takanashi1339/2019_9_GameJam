@@ -23,7 +23,7 @@ namespace GameJam9.Actor
         {
             isJump = false;
             isLeft = false;
-            speed = 3f;
+            speed = 2f;
         }
 
         public Player(Player other)

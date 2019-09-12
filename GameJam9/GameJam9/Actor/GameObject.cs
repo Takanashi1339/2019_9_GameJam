@@ -128,10 +128,10 @@ namespace GameJam9.Actor
             var thisRect = Rectangle;
             var otherRect = otherObj.Rectangle;
             var dic = new Dictionary<Direction, int>();
-            dic.Add(Direction.Right, Math.Abs(thisRect.Left - otherRect.Right));
-            dic.Add(Direction.Left, Math.Abs(thisRect.Right - otherRect.Left));
             dic.Add(Direction.Top, Math.Abs(thisRect.Bottom - otherRect.Top));
             dic.Add(Direction.Bottom, Math.Abs(thisRect.Top - otherRect.Bottom));
+            dic.Add(Direction.Right, Math.Abs(thisRect.Left - otherRect.Right));
+            dic.Add(Direction.Left, Math.Abs(thisRect.Right - otherRect.Left));
             var dir = dic.OrderBy(pair => pair.Value).First().Key;
             return dir;
         }
