@@ -27,3 +27,9 @@ D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJa
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csproj.CopyComplete
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\drill.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\gun1.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\gun2.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\hammer.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\test_enemy.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache

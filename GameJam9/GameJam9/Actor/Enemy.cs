@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
+
+namespace GameJam9.Actor
+{
+    abstract class Enemy : Entity
+    {
+        public int HP
+        {
+            get;
+            protected set;
+        }
+
+        public Enemy(string name, Vector2 position, Point size, int maxHp) 
+            : base(name, position, size)
+        {
+            HP = maxHp;
+        }
+
+        public void SetDamage(int value)
+        {
+            HP -= value;
+            IsDead = HP <= 0;
+        }
+    }
+}
