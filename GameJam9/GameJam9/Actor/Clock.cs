@@ -18,10 +18,12 @@ namespace GameJam9.Actor
         //時間別の色
         private static readonly Color[] SkyColors = 
         {
-            new Color(0, 0, 0), //夜
             new Color(155, 177, 177), //朝
             new Color(210, 255, 255), //昼
-            new Color(255, 72, 0) //夕方？
+            new Color(255, 72, 0), //夕方？
+            new Color(85, 24, 0),
+            new Color(42, 12, 0),
+            new Color(0, 0, 0), //夜
         };
        
 
@@ -29,10 +31,10 @@ namespace GameJam9.Actor
         {
             get
             {
-                var colorIndex = (int) Math.Floor(timer.Location * 4);
-                var colorLocation = timer.Location * 4 - colorIndex;
+                var colorIndex = (int) Math.Floor(timer.Location * SkyColors.Length);
+                var colorLocation = timer.Location * SkyColors.Length - colorIndex;
                 var startColor = SkyColors[colorIndex];
-                if(colorIndex == 3)
+                if(colorIndex == SkyColors.Length - 1)
                 {
                     colorIndex = -1;
                 }

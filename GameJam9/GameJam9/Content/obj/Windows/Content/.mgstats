@@ -1,5 +1,12 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+<<<<<<< HEAD
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock.xnb","TextureProcessor","Texture2DContent",13962,65621,0.1017231
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock_hand.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock_hand.xnb","TextureProcessor","Texture2DContent",1106,65621,0.0080102
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_block.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_block.xnb","TextureProcessor","Texture2DContent",173,4181,0.0050184
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_player.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_player.xnb","TextureProcessor","Texture2DContent",460,8277,0.0069804
+=======
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock.xnb","TextureProcessor","Texture2DContent",13962,65621,1.004521
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock_hand.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock_hand.xnb","TextureProcessor","Texture2DContent",1106,65621,0
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_block.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_block.xnb","TextureProcessor","Texture2DContent",173,4181,0.0141672
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_player.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_player.xnb","TextureProcessor","Texture2DContent",460,8277,0.0191916
+>>>>>>> master
