@@ -21,6 +21,10 @@ namespace GameJam9.Def
                 { "clock", Path },
                 { "clock_hand", Path },
                 { "test_enemy", Path},
+                { "BG1", Path},
+                { "BG2", Path},
+                { "BG3", Path}
+                { "test_enemy", Path},
                 { "grass_block1", Path },
                 { "grass_block2", Path },
                 { "grass_block3", Path },

@@ -33,6 +33,7 @@ D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJa
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
+<<<<<<< HEAD
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\Needle.xnb
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\CSV\Maptest.csv
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Maptest.csv
@@ -75,3 +76,8 @@ D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\grass_block3.xnb
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\grass_block1.xnb
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\forest_block1.xnb
+=======
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\BG1.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\BG2.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\BG3.xnb
+>>>>>>> master
