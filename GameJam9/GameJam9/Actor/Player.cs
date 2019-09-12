@@ -44,7 +44,24 @@ namespace GameJam9.Actor
                 isJump = true;
             }
 
-            velocity.X = Input.Velocity().X * speed;
+            if(Input.Velocity().X < 0 && Velocity.X > -speed
+            || Input.Velocity().X > 0 && Velocity.X < speed){
+                if (isJump)
+                {
+                    velocity.X += Input.Velocity().X * speed/10;
+                }
+                else {
+                    velocity.X += Input.Velocity().X * speed;
+                }
+            }
+            else if (Math.Abs(velocity.X) < speed / 10)
+            {
+                velocity.X = 0;
+            }else
+            {
+                velocity.X -= Math.Sign(velocity.X) * speed/10;
+            }
+
             Velocity = velocity;
             if (Velocity.Y == 0f)
             {
@@ -70,6 +87,11 @@ namespace GameJam9.Actor
         public override void Hit(GameObject gameObject)
         {
             base.Hit(gameObject);
+            if (gameObject is Enemy enemy)
+            {
+                Velocity = new Vector2(Math.Sign(Position.X - enemy.Position.X) * 12f, -8f);
+                isJump = true;
+            }
 
             UpdateDisplayModify();
         }
