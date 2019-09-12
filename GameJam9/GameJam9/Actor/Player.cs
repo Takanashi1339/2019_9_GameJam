@@ -50,7 +50,7 @@ namespace GameJam9.Actor
             {
                 isJump = false;
             }
-            else if(Velocity.Y > 0.6f)
+            else if (Velocity.Y > 0.6f)
             {
                 isJump = true;
             }

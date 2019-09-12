@@ -68,7 +68,7 @@ namespace GameJam9.Actor
         {
             get
             {
-                return new Rectangle(Position.ToPoint(), Size);
+                return new Rectangle(new Point((int) Math.Ceiling(Position.X), (int) Math.Ceiling(Position.Y)), Size);
             }
         }
 
