@@ -23,7 +23,7 @@ namespace GameJam9.Actor
         {
             isJump = false;
             isLeft = false;
-            speed = 2f;
+            speed = 3f;
         }
 
         public Player(Player other)
@@ -89,7 +89,7 @@ namespace GameJam9.Actor
             base.Hit(gameObject);
             if (gameObject is Enemy enemy)
             {
-                Velocity = new Vector2(Math.Sign(Position.X - enemy.Position.X) * 12f, -8f);
+                Velocity = new Vector2(Math.Sign(Position.X+Size.X/2 - (enemy.Position.X + enemy.Size.X / 2)) * 14f, -10f);
                 isJump = true;
             }
 
