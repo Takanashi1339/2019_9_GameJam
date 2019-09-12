@@ -54,6 +54,7 @@
     <Compile Include="Actor\Map.cs" />
     <Compile Include="Actor\Particle.cs" />
     <Compile Include="Actor\Player.cs" />
+    <Compile Include="Actor\RandomGrass.cs" />
     <Compile Include="Actor\Space.cs" />
     <Compile Include="Actor\TestBlock.cs" />
     <Compile Include="Actor\TestEnemy01.cs" />

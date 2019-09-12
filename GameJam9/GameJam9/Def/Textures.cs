@@ -32,7 +32,15 @@ namespace GameJam9.Def
                 { "forest_block2", Path },
                 { "forest_block3", Path },
                 { "dirt_block", Path },
-
+                { "flower1", Path},
+                { "flower2", Path},
+                { "flower3", Path},
+                { "flower4", Path},
+                { "flower5", Path},
+                { "grass", Path},
+                { "grass2", Path},
+                { "grass3", Path},
+                { "zenmaisou", Path},
 
                 //必要に応じて自分で追加
             };
