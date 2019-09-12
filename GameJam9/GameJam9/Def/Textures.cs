@@ -23,7 +23,7 @@ namespace GameJam9.Def
                 { "test_enemy", Path},
                 { "BG1", Path},
                 { "BG2", Path},
-                { "BG3", Path}
+                { "BG3", Path},
                 { "test_enemy", Path},
                 { "grass_block1", Path },
                 { "grass_block2", Path },
