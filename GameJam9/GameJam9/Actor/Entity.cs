@@ -27,10 +27,10 @@ namespace GameJam9.Actor
 
         public override void Hit(GameObject gameObject)
         {
-            Direction dir = CheckDirection(gameObject);
 
             if (gameObject is Block block && block.IsSolid)
             {
+                Direction dir = CheckDirection(block);
                 CorrectPosition(block);
                 var velocity = Velocity;
                 if (dir == Direction.Top)
