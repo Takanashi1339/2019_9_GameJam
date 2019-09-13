@@ -10,7 +10,7 @@ namespace GameJam9.Actor
     class TestBlock : Block
     {
         public TestBlock()
-            : base("grass_block" + GameDevice.Instance().GetRandom().Next(1, 4).ToString(), true)
+            : base("temple_block" + GameDevice.Instance().GetRandom().Next(1, 4).ToString(), true)
         {
         }
 

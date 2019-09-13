@@ -17,15 +17,23 @@ namespace GameJam9.Def
             {
                 //{ "texture_name", Path},
                 { "test_block", Path },
-                { "test_player", Path},
+                { "test_player", Path },
                 { "clock", Path },
                 { "clock_hand", Path },
+<<<<<<< Updated upstream
                 { "pointer", Path},
                 { "test_enemy", Path},
                 { "BG1", Path},
                 { "BG2", Path},
                 { "BG3", Path},
                 { "test_enemy", Path},
+=======
+                { "test_enemy", Path },
+                { "BG1", Path },
+                { "BG2", Path },
+                { "BG3", Path },
+                { "test_enemy", Path },
+>>>>>>> Stashed changes
                 { "grass_block1", Path },
                 { "grass_block2", Path },
                 { "grass_block3", Path },
@@ -33,6 +41,7 @@ namespace GameJam9.Def
                 { "forest_block2", Path },
                 { "forest_block3", Path },
                 { "dirt_block", Path },
+<<<<<<< Updated upstream
                 { "flower1", Path},
                 { "flower2", Path},
                 { "flower3", Path},
@@ -43,6 +52,20 @@ namespace GameJam9.Def
                 { "grass3", Path},
                 { "zenmaisou", Path},
                 { "bird",Path},
+=======
+                { "flower1", Path },
+                { "flower2", Path },
+                { "flower3", Path },
+                { "flower4", Path },
+                { "flower5", Path },
+                { "grass", Path },
+                { "grass2", Path },
+                { "grass3", Path },
+                { "zenmaisou", Path },
+                { "temple_block1" , Path },
+                { "temple_block2", Path },
+                { "temple_block3", Path },
+>>>>>>> Stashed changes
 
                 //必要に応じて自分で追加
             };
