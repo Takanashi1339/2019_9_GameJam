@@ -52,6 +52,7 @@
     <Compile Include="Actor\Enemy.cs" />
     <Compile Include="Actor\Entity.cs" />
     <Compile Include="Actor\GameObject.cs" />
+    <Compile Include="Actor\MagicEnemy.cs" />
     <Compile Include="Actor\Map.cs" />
     <Compile Include="Actor\Particle.cs" />
     <Compile Include="Actor\Player.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Actor\RandomGrass.cs" />
     <Compile Include="Actor\Space.cs" />
     <Compile Include="Actor\TestBlock.cs" />
+    <Compile Include="Actor\TestBullet.cs" />
     <Compile Include="Actor\TestEnemy01.cs" />
     <Compile Include="Actor\UI.cs" />
     <Compile Include="Def\MapDictionary.cs" />
