@@ -38,6 +38,7 @@
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/log4.png</File>
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/Moon.png</File>
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/mushroom.png</File>
+    <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/pointer.png</File>
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/stump_left.png</File>
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/stump_right.png</File>
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_block.png</File>
@@ -46,6 +47,7 @@
     <File>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/zenmaisou.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

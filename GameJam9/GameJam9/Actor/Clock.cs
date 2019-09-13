@@ -15,6 +15,18 @@ namespace GameJam9.Actor
         private float angle;
         private string clockHand = "clock_hand";
 
+        public static Clock Instance
+        {
+            get;
+            private set;
+        }
+
+        public bool IsEnd
+        {
+            get;
+            private set;
+        }
+
         //時間別の色
         private static readonly Color[] SkyColors = 
         {
@@ -33,6 +45,11 @@ namespace GameJam9.Actor
             {
                 var colorIndex = (int) Math.Floor(timer.Location * SkyColors.Length);
                 var colorLocation = timer.Location * SkyColors.Length - colorIndex;
+                if (colorIndex == SkyColors.Length)
+                {
+                    IsEnd = true;
+                    return SkyColors[0];
+                }
                 var startColor = SkyColors[colorIndex];
                 if(colorIndex == SkyColors.Length - 1)
                 {
@@ -43,10 +60,53 @@ namespace GameJam9.Actor
                 return Color.Lerp(startColor, endColor, colorLocation);
             }
         }
+
+        public Color EntityColor
+        {
+            get
+            {
+                var color = Color.White;
+                var bgColor = BackGroundColor;
+                byte rate = 3;
+                color.R -= bgColor.R;
+                color.R /= rate;
+                color.R += bgColor.R;
+                color.G -= bgColor.G;
+                color.G /= rate;
+                color.G += bgColor.G;
+                color.B -= bgColor.B;
+                color.B /= rate;
+                color.B += bgColor.B;
+                return color;
+            }
+        }
+
+        public Color BlockColor
+        {
+            get
+            {
+                var color = Color.White;
+                var bgColor = BackGroundColor;
+                byte rate = 4;
+                color.R -= bgColor.R;
+                color.R /= rate;
+                color.R += bgColor.R;
+                color.G -= bgColor.G;
+                color.G /= rate;
+                color.G += bgColor.G;
+                color.B -= bgColor.B;
+                color.B /= rate;
+                color.B += bgColor.B;
+                return color;
+            }
+        }
+
         public Clock( Vector2 position)
             : base("clock", position, new Point(128, 128), 1, 1)
         {
             timer = new Timer(60f);
+            IsEnd = false;
+            Instance = this;
         }
 
         public override void Update(GameTime gameTime)

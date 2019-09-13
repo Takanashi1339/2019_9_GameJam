@@ -20,6 +20,7 @@ namespace GameJam9.Def
                 { "test_player", Path},
                 { "clock", Path },
                 { "clock_hand", Path },
+                { "pointer", Path},
                 { "test_enemy", Path},
                 { "BG1", Path},
                 { "BG2", Path},

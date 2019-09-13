@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameJam9.Def;
+using GameJam9.Device;
 using Microsoft.Xna.Framework;
 
 namespace GameJam9.Actor
 {
     abstract class Enemy : Entity
     {
+        protected bool moveLock = true;
+
         public int HP
         {
             get;
@@ -25,6 +29,24 @@ namespace GameJam9.Actor
         {
             HP -= value;
             IsDead = HP <= 0;
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            if (moveLock)
+            {
+                var modify = GameDevice.Instance().DisplayModify;
+
+                if (Position.X + modify.X + Size.X >= 0 && Position.X + modify.X <= Screen.Width)
+                {
+                    moveLock = false;
+                }
+                else
+                {
+                    Velocity = Vector2.Zero;
+                }
+            }
+            base.Update(gameTime);
         }
     }
 }

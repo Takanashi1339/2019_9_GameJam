@@ -24,6 +24,7 @@ namespace GameJam9.Actor
         }
         protected override void Draw(Drawer drawer)
         {
+            drawer.Color = Clock.Instance.BlockColor;
             drawer.DisplayModify = true;
             base.Draw(drawer);
         }
