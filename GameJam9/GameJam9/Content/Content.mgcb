@@ -52,7 +52,6 @@
 /processorParam:TextureFormat=Color
 /build:Texture/BG3.png
 
-<<<<<<< Updated upstream
 #begin Texture/bird.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -65,8 +64,6 @@
 /processorParam:TextureFormat=Color
 /build:Texture/bird.png
 
-=======
->>>>>>> Stashed changes
 #begin Texture/Clock.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -463,11 +460,7 @@
 /processorParam:TextureFormat=Color
 /build:Texture/stump_left.png
 
-<<<<<<< Updated upstream
 #begin Texture/stump_right.png
-=======
-#begin Texture/temple_block1.png
->>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -477,11 +470,19 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-<<<<<<< Updated upstream
 /build:Texture/stump_right.png
-=======
+
+#begin Texture/temple_block1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
 /build:Texture/temple_block1.png
->>>>>>> Stashed changes
 
 #begin Texture/temple_block2.png
 /importer:TextureImporter
@@ -507,8 +508,6 @@
 /processorParam:TextureFormat=Color
 /build:Texture/temple_block3.png
 
-<<<<<<< Updated upstream
-=======
 #begin Texture/test_block.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -533,7 +532,6 @@
 /processorParam:TextureFormat=Color
 /build:Texture/test_enemy.png
 
->>>>>>> Stashed changes
 #begin Texture/test_player.png
 /importer:TextureImporter
 /processor:TextureProcessor
