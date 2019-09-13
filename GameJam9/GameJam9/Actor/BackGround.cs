@@ -23,6 +23,7 @@ namespace GameJam9.Actor
         
         protected override void Draw(Drawer drawer)
         {
+            drawer.Color = Clock.Instance.BackGroundColor;
             Renderer.Instance.DrawTexture(Name, Position + new Vector2(Size.X, 0), drawer);
             base.Draw(drawer);
         }

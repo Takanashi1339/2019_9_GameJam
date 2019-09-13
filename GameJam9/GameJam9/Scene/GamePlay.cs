@@ -56,7 +56,8 @@ namespace GameJam9.Scene
             reader.Read("Maptest.csv");
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
-            clock = new Clock(new Vector2(0, 0));
+            clock = new Clock(Vector2.Zero);
+            new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {
                 new BackGround1(Vector2.Zero),
                 new BackGround2(Vector2.Zero),
@@ -90,7 +91,7 @@ namespace GameJam9.Scene
                 next = Scene.Ending;
             }
 
-            if (Input.GetKeyTrigger(Keys.Space))
+            if (clock.IsEnd)
             {
                 //シーン移動
                 isEndFlag = true;

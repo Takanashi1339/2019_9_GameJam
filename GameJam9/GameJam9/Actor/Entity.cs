@@ -54,6 +54,7 @@ namespace GameJam9.Actor
         protected override void Draw(Drawer drawer)
         {
             drawer.DisplayModify = true;
+            drawer.Color = Clock.Instance.EntityColor;
             base.Draw(drawer);
         }
 
