@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using GameJam9.Manager;
 using GameJam9.Util;
+using GameJam9.Def;
+using GameJam9.Device;
 
 namespace GameJam9.Actor
 {
@@ -49,6 +51,15 @@ namespace GameJam9.Actor
                 }
                 Velocity = velocity;
             }
+        }
+
+        public bool IsInScreen()
+        {
+            var modify = GameDevice.Instance().DisplayModify;
+            return Position.X + modify.X + Size.X >= 0 
+                && Position.X + modify.X <= Screen.Width
+                && Position.Y + modify.Y + Size.Y >= 0
+                && Position.Y + modify.Y <= Screen.Height;
         }
 
         protected override void Draw(Drawer drawer)

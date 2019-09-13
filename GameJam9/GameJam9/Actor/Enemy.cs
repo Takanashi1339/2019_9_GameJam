@@ -35,9 +35,7 @@ namespace GameJam9.Actor
         {
             if (moveLock)
             {
-                var modify = GameDevice.Instance().DisplayModify;
-
-                if (Position.X + modify.X + Size.X >= 0 && Position.X + modify.X <= Screen.Width)
+                if (IsInScreen())
                 {
                     moveLock = false;
                 }

@@ -17,7 +17,9 @@ namespace GameJam9.Def
             {
                 //{ "texture_name", Path},
                 { "test_block", Path },
-                { "test_player", Path },
+                { "player_stand", Path },
+                { "player_walk", Path },
+                { "player_fly", Path },
                 { "clock", Path },
                 { "clock_hand", Path },
                 { "pointer", Path},
@@ -45,8 +47,13 @@ namespace GameJam9.Def
                 { "temple_block1" , Path },
                 { "temple_block2", Path },
                 { "temple_block3", Path },
+<<<<<<< HEAD
                 { "magic_enemy" ,Path },
                 { "test_bullet", Path },
+=======
+                {"fox",Path },
+                {"caterpillar",Path },
+>>>>>>> master
 
                 //必要に応じて自分で追加
             };
