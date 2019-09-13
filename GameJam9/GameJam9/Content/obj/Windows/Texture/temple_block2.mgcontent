@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/temple_block2.png</SourceFile>
-  <SourceTime>2019-09-13T10:57:01.5184443+09:00</SourceTime>
+  <SourceTime>2019-09-13T11:40:53.5610931+09:00</SourceTime>
   <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Texture/temple_block2.xnb</DestFile>
-  <DestTime>2019-09-13T10:57:59.2201437+09:00</DestTime>
+  <DestTime>2019-09-13T11:45:14.4054707+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
