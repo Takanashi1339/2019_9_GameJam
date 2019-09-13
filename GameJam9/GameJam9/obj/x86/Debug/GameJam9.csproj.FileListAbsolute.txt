@@ -77,3 +77,4 @@ D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJa
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\magic_enemy.xnb
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\test_bullet.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
