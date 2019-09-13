@@ -45,6 +45,7 @@
     <Compile Include="Actor\BackGround1.cs" />
     <Compile Include="Actor\BackGround2.cs" />
     <Compile Include="Actor\BackGround3.cs" />
+    <Compile Include="Actor\Bird.cs" />
     <Compile Include="Actor\Block.cs" />
     <Compile Include="Actor\Clock.cs" />
     <Compile Include="Actor\Dirt.cs" />

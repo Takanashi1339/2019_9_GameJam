@@ -41,6 +41,7 @@ namespace GameJam9.Def
                 { "grass2", Path},
                 { "grass3", Path},
                 { "zenmaisou", Path},
+                { "bird",Path},
 
                 //必要に応じて自分で追加
             };
