@@ -18,11 +18,14 @@ namespace GameJam9.Actor
         private bool isJump;
         private bool isLeft;
         private float speed;
+        private Animation animation;
+
         public Player(Vector2 position)
-            : base("test_player", position , new Point(32 , 64))
+            : base("player_stand", position , new Point(32 , 64))
         {
             isJump = false;
             isLeft = false;
+            animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
         }
 
@@ -43,7 +46,6 @@ namespace GameJam9.Actor
                 velocity.Y = -10.0f;//仮の移動量
                 isJump = true;
             }
-
             if(Input.Velocity().X < 0 && Velocity.X > -speed
             || Input.Velocity().X > 0 && Velocity.X < speed){
                 if (isJump)
@@ -80,6 +82,7 @@ namespace GameJam9.Actor
                 isLeft = true;
             }
             base.Update(gameTime);
+            animation.Update(gameTime);
 
             UpdateDisplayModify();
         }
@@ -98,15 +101,28 @@ namespace GameJam9.Actor
 
         public override void Draw()
         {
+            if (!isJump && Math.Abs(Input.Velocity().X) > 0)
+            {
+                Name = "player_walk";
+            }
+            else if (isJump)
+            {
+                Name = "player_fly";
+            }
+            else
+            {
+                Name = "player_stand";
+            }
             var drawer = Drawer.Default;
-            if (!isLeft)
+            if (isLeft)
             {
                 drawer.SpriteEffects = SpriteEffects.None;
             }
-            if (isLeft)
+            if (!isLeft)
             {
                 drawer.SpriteEffects = SpriteEffects.FlipHorizontally;
             }
+            drawer.Rectangle = animation.GetRectangle();
             base.Draw(drawer);
         }
 
