@@ -45,6 +45,8 @@ namespace GameJam9.Def
                 { "temple_block1" , Path },
                 { "temple_block2", Path },
                 { "temple_block3", Path },
+                {"fox",Path },
+                {"caterpillar",Path },
 
                 //必要に応じて自分で追加
             };
