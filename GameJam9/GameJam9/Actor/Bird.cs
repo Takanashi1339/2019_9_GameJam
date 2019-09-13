@@ -15,12 +15,14 @@ namespace GameJam9.Actor
         private Vector2 leftPosition;
         private Vector2 rightPosition;
         private int moveRange;
+        private float flySpeed = -2f;
+
         public Bird(Vector2 position) 
             : base("bird", position, new Point(64,64), 10)
         {
             moveRange = 3;
             Gravity = 0;
-            Velocity = new Vector2(-2f, 0);
+            Velocity = new Vector2(flySpeed, 0);
         }
 
         public Bird(Bird other)
@@ -46,8 +48,9 @@ namespace GameJam9.Actor
             if (Position.X <= leftPosition.X ||
                 Position.X >= rightPosition.X)
             {
-                Velocity = -Velocity;
+                flySpeed *= -1;
             }
+            Velocity = new Vector2(flySpeed, Velocity.Y);
             animation.Update(gameTime);
             base.Update(gameTime);
         }
