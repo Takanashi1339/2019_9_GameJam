@@ -78,6 +78,7 @@ D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\magic_enemy.xnb
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\test_bullet.xnb
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
+<<<<<<< HEAD
 C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\Needle.xnb
 C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\temple_block.xnb
 C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Maptest.csv
@@ -157,3 +158,7 @@ C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\Game
 C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csproj.CopyComplete
 C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
 C:\K019G1239\1学年\GameJum\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
+=======
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\magic_enemy.xnb
+D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\test_bullet.xnb
+>>>>>>> master

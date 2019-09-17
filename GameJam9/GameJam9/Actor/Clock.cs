@@ -39,7 +39,7 @@ namespace GameJam9.Actor
         };
        
 
-        public Color BackGroundColor
+        public Color SkyColor
         {
             get
             {
@@ -61,12 +61,33 @@ namespace GameJam9.Actor
             }
         }
 
+        public Color BackGroundColor
+        {
+            get
+            {
+                var color = Color.White;
+                var bgColor = SkyColor;
+                byte rate = 6;
+                color.R -= bgColor.R;
+                color.R /= rate;
+                color.R += bgColor.R;
+                color.G -= bgColor.G;
+                color.G /= rate;
+                color.G += bgColor.G;
+                color.B -= bgColor.B;
+                color.B /= rate;
+                color.B += bgColor.B;
+                return color;
+            }
+        }
+
+
         public Color EntityColor
         {
             get
             {
                 var color = Color.White;
-                var bgColor = BackGroundColor;
+                var bgColor = SkyColor;
                 byte rate = 3;
                 color.R -= bgColor.R;
                 color.R /= rate;
@@ -86,8 +107,8 @@ namespace GameJam9.Actor
             get
             {
                 var color = Color.White;
-                var bgColor = BackGroundColor;
-                byte rate = 4;
+                var bgColor = SkyColor;
+                byte rate = 3;
                 color.R -= bgColor.R;
                 color.R /= rate;
                 color.R += bgColor.R;
