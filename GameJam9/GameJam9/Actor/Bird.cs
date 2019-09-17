@@ -41,7 +41,6 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            if (!IsInScreen()) return;
             timer.Update(gameTime);
             if(timer.IsTime)
             {

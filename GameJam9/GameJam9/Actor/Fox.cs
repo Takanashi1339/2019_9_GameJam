@@ -36,10 +36,10 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            if (!IsInScreen()) return;
             Velocity = new Vector2(walkSpeed, Velocity.Y);
             animation.Update(gameTime);
             base.Update(gameTime);
+            
         }
 
         public override void Hit(GameObject gameObject)

@@ -11,7 +11,6 @@ namespace GameJam9.Actor
 {
     abstract class Enemy : Entity
     {
-        protected bool moveLock = true;
 
         public int HP
         {
@@ -33,16 +32,9 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            if (moveLock)
+            if(!IsInScreen())
             {
-                if (IsInScreen())
-                {
-                    moveLock = false;
-                }
-                else
-                {
-                    Velocity = Vector2.Zero;
-                }
+                Velocity = Vector2.Zero;
             }
             base.Update(gameTime);
         }

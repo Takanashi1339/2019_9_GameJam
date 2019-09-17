@@ -40,7 +40,6 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            if (!IsInScreen()) return;
             var PlayerPosition = GameObjectManager.Instance.Find<Player>()[0].Position;
             rotate = PlayerPosition - Position;
             rotate.Normalize();
