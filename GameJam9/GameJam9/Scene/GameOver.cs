@@ -13,15 +13,22 @@ namespace GameJam9.Scene
     class GameOver : IScene
     {
         private bool isEndFlag;
+        private Renderer renderer;
 
         public GameOver()
         {
             isEndFlag = false;
+            renderer = Renderer.Instance;
         }
 
         public void Draw()
         {
             GameDevice.Instance().GetGraphicsDevice().Clear(Color.Red);
+            renderer.Begin();
+
+            renderer.DrawTexture("gameover", Vector2.Zero, Drawer.Default);
+
+            renderer.End();
         }
 
         public void Initialize()

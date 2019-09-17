@@ -13,15 +13,22 @@ namespace GameJam9.Scene
     class Ending : IScene
     {
         private bool isEndFlag;
+        private Renderer renderer;
 
         public Ending()
         {
             isEndFlag = false;
+            renderer = Renderer.Instance;
         }
 
         public void Draw()
         {
             GameDevice.Instance().GetGraphicsDevice().Clear(Color.Black);
+            renderer.Begin();
+
+            renderer.DrawTexture("ending", Vector2.Zero, Drawer.Default);
+
+            renderer.End();
         }
 
         public void Initialize()
