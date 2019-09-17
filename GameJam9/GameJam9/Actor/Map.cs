@@ -14,6 +14,8 @@ namespace GameJam9.Actor
     class Map
     {
         public const int BlockSize = 32;
+        public int ShiftCount = 0;
+
         public string Name
         {
             get;
@@ -137,6 +139,16 @@ namespace GameJam9.Actor
                 }
             }
             replace();
+
+            var displayModify = (int) (-gameDevice.DisplayModify.X / BlockSize);
+            var mapModify = mapList[0].Count / 2 + ShiftCount;
+            if (displayModify < mapModify)
+            {
+                LeftShift();
+            }else if (displayModify > mapModify)
+            {
+                RightShift();
+            }
         }
 
         public void Draw()
@@ -155,9 +167,9 @@ namespace GameJam9.Actor
             var otherRect = gameObject.Rectangle;
             Point workMax = otherRect.Location + otherRect.Size;
             Point workMin = otherRect.Location;
-            int minX = workMin.X / BlockSize;
+            int minX = workMin.X / BlockSize - ShiftCount;
             int minY = workMin.Y / BlockSize;
-            int maxX = workMax.X / BlockSize;
+            int maxX = workMax.X / BlockSize - ShiftCount;
             int maxY = workMax.Y / BlockSize;
             if (minX < 1)
             {
@@ -202,6 +214,34 @@ namespace GameJam9.Actor
                     }
                 }
             }
+        }
+
+        public void RightShift()
+        {
+            foreach (var line in mapList)
+            {
+                var leftBlock = line.First();
+                var rightPosition = line.Last().Position;
+                rightPosition.X += BlockSize;
+                leftBlock.Position = rightPosition;
+                line.Remove(leftBlock);
+                line.Add(leftBlock);
+            }
+            ShiftCount++;
+        }
+
+        public void LeftShift()
+        {
+            foreach (var line in mapList)
+            {
+                var rightBlock = line.Last();
+                var leftPosition = line.First().Position;
+                leftPosition.X -= BlockSize;
+                rightBlock.Position = leftPosition;
+                line.Remove(rightBlock);
+                line.Insert(0, rightBlock);
+            }
+            ShiftCount--;
         }
     }
 }

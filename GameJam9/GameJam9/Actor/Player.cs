@@ -27,6 +27,7 @@ namespace GameJam9.Actor
             isLeft = false;
             animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
+            shiftable = false;
         }
 
         public Player(Player other)
