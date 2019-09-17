@@ -50,6 +50,7 @@
     <Compile Include="Actor\Caterpillar.cs" />
     <Compile Include="Actor\Clock.cs" />
     <Compile Include="Actor\Dirt.cs" />
+    <Compile Include="Actor\Door.cs" />
     <Compile Include="Actor\DropItem.cs" />
     <Compile Include="Actor\Enemy.cs" />
     <Compile Include="Actor\Entity.cs" />

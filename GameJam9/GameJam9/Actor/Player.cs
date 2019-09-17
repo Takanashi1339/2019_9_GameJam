@@ -15,18 +15,24 @@ namespace GameJam9.Actor
 {
     class Player : Entity
     {
+        //#TODO ドアに触れたままアニメーションするミスあり
         private bool isJump;
         private bool isLeft;
         private float speed;
         private Animation animation;
-        private bool hasKey;
+        private bool moveLock;
+        public bool HasKey
+        {
+            get;
+            private set;
+        } = false;
 
         public Player(Vector2 position)
             : base("player_stand", position , new Point(32 , 64))
         {
             isJump = false;
             isLeft = false;
-            hasKey = false;
+            moveLock = false;
             animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
             shiftable = false;
@@ -44,6 +50,12 @@ namespace GameJam9.Actor
         public override void Update(GameTime gameTime)
         {
             var velocity = Velocity;
+            if (moveLock)
+            {
+                UpdateDisplayModify();
+                Velocity = Vector2.Zero;
+                return;
+            }
             if (Input.GetKeyTrigger(Keys.W) && !isJump)
             {
                 velocity.Y = -10.0f;//仮の移動量
@@ -66,7 +78,6 @@ namespace GameJam9.Actor
             {
                 velocity.X -= Math.Sign(velocity.X) * speed/10;
             }
-
             Velocity = velocity;
             if (Velocity.Y == 0f)
             {
@@ -100,7 +111,11 @@ namespace GameJam9.Actor
             }
             if(gameObject is DropItem dropItem && dropItem.Item is Key)
             {
-                hasKey = true;
+                HasKey = true;
+            }
+            if(gameObject is Door && HasKey)
+            {
+                moveLock = true;
             }
             UpdateDisplayModify();
         }

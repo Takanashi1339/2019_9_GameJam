@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameJam9.Manager;
+using GameJam9.Util;
 using Microsoft.Xna.Framework;
 
 namespace GameJam9.Actor
@@ -19,6 +20,7 @@ namespace GameJam9.Actor
             : base(item.Name, position, item.Size)
         {
             Item = item;
+            Gravity = 0f;
         }
 
         public DropItem(DropItem other)
@@ -37,6 +39,19 @@ namespace GameJam9.Actor
                 IsDead = true;
             }
             base.Hit(gameObject);
+        }
+
+        public override void Draw()
+        {
+            var drawer = Drawer.Default;
+            drawer.Rectangle = Item.GetRectangle();
+            base.Draw(drawer);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            Item.Update(gameTime);
+            base.Update(gameTime);
         }
     }
 }

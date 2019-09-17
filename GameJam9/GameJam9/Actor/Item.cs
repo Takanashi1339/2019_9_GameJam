@@ -27,5 +27,9 @@ namespace GameJam9.Actor
             Name = name;
             Size = size;
         }
+
+        public abstract void Update(GameTime gameTime);
+
+        public abstract Rectangle GetRectangle();
     }
 }

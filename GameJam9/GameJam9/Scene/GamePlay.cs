@@ -84,7 +84,13 @@ namespace GameJam9.Scene
 
         public void Update(GameTime gameTime)
         {
-            if (Input.GetKeyTrigger(Keys.Enter))
+
+            Array.ForEach(backGrounds, bg => bg.Update(gameTime));
+            gameObjectManager.Update(gameTime);
+            particleManager.Update(gameTime);
+            uiManager.Update(gameTime);
+
+            if (gameObjectManager.Find<Door>()[0].IsEnd)
             {
                 //シーン移動
                 isEndFlag = true;
@@ -97,11 +103,6 @@ namespace GameJam9.Scene
                 isEndFlag = true;
                 next = Scene.GameOver;
             }
-
-            Array.ForEach(backGrounds, bg => bg.Update(gameTime));
-            gameObjectManager.Update(gameTime);
-            particleManager.Update(gameTime);
-            uiManager.Update(gameTime);
         }
     }
 }
