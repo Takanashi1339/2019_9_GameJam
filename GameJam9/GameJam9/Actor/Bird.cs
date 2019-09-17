@@ -41,8 +41,14 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
+<<<<<<< HEAD
+            if (!IsInScreen()) return;
+            if (Position.X <= leftPosition.X ||
+                Position.X >= rightPosition.X)
+=======
             timer.Update(gameTime);
             if(timer.IsTime)
+>>>>>>> master
             {
                 flySpeed *= -1;
             }

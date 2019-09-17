@@ -19,14 +19,17 @@ namespace GameJam9.Actor
         private bool isLeft;
         private float speed;
         private Animation animation;
+        private bool hasKey;
 
         public Player(Vector2 position)
             : base("player_stand", position , new Point(32 , 64))
         {
             isJump = false;
             isLeft = false;
+            hasKey = false;
             animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
+            shiftable = false;
         }
 
         public Player(Player other)
@@ -95,7 +98,10 @@ namespace GameJam9.Actor
                 Velocity = new Vector2(Math.Sign(Position.X+Size.X/2 - (enemy.Position.X + enemy.Size.X / 2)) * 14f, -10f);
                 isJump = true;
             }
-
+            if(gameObject is DropItem dropItem && dropItem.Item is Key)
+            {
+                hasKey = true;
+            }
             UpdateDisplayModify();
         }
 

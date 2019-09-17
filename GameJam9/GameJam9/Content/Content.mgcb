@@ -136,6 +136,7 @@
 /processorParam:TextureFormat=Color
 /build:Texture/caterpillar.png
 
+<<<<<<< HEAD
 #begin Texture/clock.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -148,6 +149,8 @@
 /processorParam:TextureFormat=Color
 /build:Texture/clock.png
 
+=======
+>>>>>>> master
 #begin Texture/Clock.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -340,7 +343,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/flower2.png
 
+<<<<<<< HEAD
 #begin Texture/flower2.png
+=======
+<<<<<<< HEAD
+#begin Texture/flower5.png
+=======
+#begin Texture/grass.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -350,9 +361,21 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/flower2.png
 
 #begin Texture/flower3.png
+=======
+<<<<<<< HEAD
+/build:Texture/flower5.png
+
+#begin Texture/flower5.png
+=======
+/build:Texture/grass.png
+
+#begin Texture/grass_block1.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -364,7 +387,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/flower3.png
 
+<<<<<<< HEAD
 #begin Texture/flower3.png
+=======
+<<<<<<< HEAD
+#begin Texture/forest_block1.png
+=======
+#begin Texture/grass_block2.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -374,7 +405,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/flower3.png
+=======
+<<<<<<< HEAD
+/build:Texture/forest_block1.png
+=======
+/build:Texture/grass_block2.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/flower4.png
 /importer:TextureImporter
@@ -388,7 +427,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/flower4.png
 
+<<<<<<< HEAD
 #begin Texture/flower4.png
+=======
+<<<<<<< HEAD
+#begin Texture/forest_block2.png
+=======
+#begin Texture/grass2.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -398,7 +445,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/flower4.png
+=======
+<<<<<<< HEAD
+/build:Texture/forest_block2.png
+=======
+/build:Texture/grass2.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/flower5.png
 /importer:TextureImporter
@@ -412,7 +467,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/flower5.png
 
+<<<<<<< HEAD
 #begin Texture/flower5.png
+=======
+<<<<<<< HEAD
+#begin Texture/forest_block3.png
+=======
+#begin Texture/gun1.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -422,7 +485,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/flower5.png
+=======
+<<<<<<< HEAD
+/build:Texture/forest_block3.png
+=======
+/build:Texture/gun1.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/forest_block1.png
 /importer:TextureImporter
@@ -436,7 +507,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/forest_block1.png
 
+<<<<<<< HEAD
 #begin Texture/forest_block1.png
+=======
+<<<<<<< HEAD
+#begin Texture/fox.png
+=======
+#begin Texture/hammer.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -446,9 +525,21 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/forest_block1.png
 
 #begin Texture/forest_block2.png
+=======
+<<<<<<< HEAD
+/build:Texture/fox.png
+
+#begin Texture/fox.png
+=======
+/build:Texture/hammer.png
+
+#begin Texture/lighter.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -458,7 +549,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/forest_block2.png
+=======
+<<<<<<< HEAD
+/build:Texture/fox.png
+=======
+/build:Texture/lighter.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/forest_block2.png
 /importer:TextureImporter
@@ -472,7 +571,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/forest_block2.png
 
+<<<<<<< HEAD
 #begin Texture/forest_block3.png
+=======
+<<<<<<< HEAD
+#begin Texture/grass.png
+=======
+#begin Texture/log1.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -482,7 +589,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/forest_block3.png
+=======
+<<<<<<< HEAD
+/build:Texture/grass.png
+=======
+/build:Texture/log1.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/forest_block3.png
 /importer:TextureImporter
@@ -495,6 +610,34 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Texture/forest_block3.png
+
+<<<<<<< HEAD
+#begin Texture/fox.png
+=======
+<<<<<<< HEAD
+#begin Texture/grass_block1.png
+=======
+#begin Texture/log3.png
+>>>>>>> master
+>>>>>>> master
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+<<<<<<< HEAD
+/build:Texture/fox.png
+=======
+<<<<<<< HEAD
+/build:Texture/grass_block1.png
+=======
+/build:Texture/log3.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/fox.png
 /importer:TextureImporter
@@ -508,7 +651,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/fox.png
 
-#begin Texture/fox.png
+<<<<<<< HEAD
+#begin Texture/grass.png
+=======
+<<<<<<< HEAD
+#begin Texture/grass_block2.png
+=======
+#begin Texture/magic_enemy.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -518,7 +669,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Texture/fox.png
+<<<<<<< HEAD
+/build:Texture/grass.png
+=======
+<<<<<<< HEAD
+/build:Texture/grass_block2.png
+=======
+/build:Texture/magic_enemy.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/grass.png
 /importer:TextureImporter
@@ -532,7 +691,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass.png
 
-#begin Texture/grass.png
+<<<<<<< HEAD
+#begin Texture/grass_block1.png
+=======
+<<<<<<< HEAD
+#begin Texture/grass_block3.png
+=======
+#begin Texture/mushroom.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -542,7 +709,16 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Texture/grass.png
+<<<<<<< HEAD
+/build:Texture/grass_block1.png
+=======
+<<<<<<< HEAD
+/build:Texture/grass_block3.png
+
+#begin Texture/grass2.png
+=======
+/build:Texture/mushroom.png
+>>>>>>> master
 
 #begin Texture/grass_block1.png
 /importer:TextureImporter
@@ -556,19 +732,12 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass_block1.png
 
-#begin Texture/grass_block1.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/grass_block1.png
-
+<<<<<<< HEAD
 #begin Texture/grass_block2.png
+=======
+#begin Texture/player_stand.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -578,9 +747,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/grass_block2.png
 
 #begin Texture/grass_block2.png
+=======
+/build:Texture/grass2.png
+
+#begin Texture/grass2.png
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -590,7 +765,37 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/grass_block2.png
+
+#begin Texture/grass_block3.png
+=======
+/build:Texture/grass2.png
+
+<<<<<<< HEAD
+#begin Texture/grass3.png
+=======
+#begin Texture/pointer.png
+>>>>>>> master
+>>>>>>> master
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+<<<<<<< HEAD
+/build:Texture/grass_block3.png
+=======
+<<<<<<< HEAD
+/build:Texture/grass3.png
+=======
+/build:Texture/pointer.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/grass_block3.png
 /importer:TextureImporter
@@ -604,7 +809,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass_block3.png
 
-#begin Texture/grass_block3.png
+<<<<<<< HEAD
+#begin Texture/grass2.png
+=======
+<<<<<<< HEAD
+#begin Texture/gun1.png
+=======
+#begin Texture/stump_right.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -614,7 +827,15 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Texture/grass_block3.png
+<<<<<<< HEAD
+/build:Texture/grass2.png
+=======
+<<<<<<< HEAD
+/build:Texture/gun1.png
+=======
+/build:Texture/stump_right.png
+>>>>>>> master
+>>>>>>> master
 
 #begin Texture/grass2.png
 /importer:TextureImporter
@@ -628,67 +849,15 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass2.png
 
-#begin Texture/grass2.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/grass2.png
-
+<<<<<<< HEAD
 #begin Texture/grass3.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/grass3.png
-
-#begin Texture/grass3.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/grass3.png
-
-#begin Texture/gun1.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/gun1.png
-
-#begin Texture/gun1.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/gun1.png
-
+=======
+<<<<<<< HEAD
 #begin Texture/gun2.png
+=======
+#begin Texture/temple_block2.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -698,9 +867,96 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
+/build:Texture/grass3.png
+=======
+<<<<<<< HEAD
+/build:Texture/gun2.png
+=======
+/build:Texture/temple_block2.png
+>>>>>>> master
+>>>>>>> master
+
+#begin Texture/grass3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/grass3.png
+
+<<<<<<< HEAD
+#begin Texture/gun1.png
+=======
+<<<<<<< HEAD
+#begin Texture/hammer.png
+=======
+#begin Texture/test_block.png
+>>>>>>> master
+>>>>>>> master
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+<<<<<<< HEAD
+/build:Texture/gun1.png
+=======
+<<<<<<< HEAD
+/build:Texture/hammer.png
+=======
+/build:Texture/test_block.png
+>>>>>>> master
+>>>>>>> master
+
+#begin Texture/gun1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/gun1.png
+
+<<<<<<< HEAD
+#begin Texture/gun2.png
+=======
+<<<<<<< HEAD
+#begin Texture/key.png
+=======
+#begin Texture/test_enemy.png
+>>>>>>> master
+>>>>>>> master
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/gun2.png
 
 #begin Texture/gun2.png
+=======
+<<<<<<< HEAD
+/build:Texture/key.png
+
+#begin Texture/lighter.png
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -710,6 +966,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:Texture/gun2.png
 
 #begin Texture/hammer.png
@@ -746,6 +1003,8 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+=======
+>>>>>>> master
 /build:Texture/lighter.png
 
 #begin Texture/lighter.png
@@ -1252,6 +1511,13 @@
 /processorParam:TextureFormat=Color
 /build:Texture/test_player.png
 
+<<<<<<< HEAD
+=======
+=======
+/build:Texture/test_enemy.png
+
+>>>>>>> master
+>>>>>>> master
 #begin Texture/test_player.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1264,6 +1530,7 @@
 /processorParam:TextureFormat=Color
 /build:Texture/test_player.png
 
+<<<<<<< HEAD
 #begin Texture/title.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1276,6 +1543,9 @@
 /processorParam:TextureFormat=Color
 /build:Texture/title.png
 
+=======
+<<<<<<< HEAD
+>>>>>>> master
 #begin Texture/Zenmaisou.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1289,6 +1559,12 @@
 /build:Texture/Zenmaisou.png
 
 #begin Texture/Zenmaisou.png
+<<<<<<< HEAD
+=======
+=======
+#begin Texture/zenmaisou.png
+>>>>>>> master
+>>>>>>> master
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
