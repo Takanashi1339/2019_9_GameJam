@@ -20,7 +20,7 @@ namespace GameJam9.Def
             Data.Add("2", new Dirt());
             Data.Add("g", new RandomGrass());
             Data.Add("P", new Player(Vector2.Zero));
-            Data.Add("E", new TestEnemy01(Vector2.Zero));
+            Data.Add("E", new Fox(Vector2.Zero));
             Data.Add("E2", new Bird(Vector2.Zero));
             Data.Add("E3", new MagicEnemy(Vector2.Zero));
             //ここにEntity/Blockを追加
