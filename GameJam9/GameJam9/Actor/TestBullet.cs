@@ -12,12 +12,13 @@ namespace GameJam9.Actor
     class TestBullet : Enemy
     {
         private float speed;
+        private Vector2 velocity;
         public TestBullet(Vector2 position, Vector2 velocity)
             : base("test_bullet", position, new Point(16, 16), 1)
         {
+            this.velocity = velocity;
             speed = 3f;
             Gravity = 0;
-            Velocity = velocity * speed;
         }
 
         public TestBullet(TestBullet other)
@@ -42,6 +43,12 @@ namespace GameJam9.Actor
                 IsDead = true;
             }
             base.Hit(gameObject);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            Velocity = velocity * speed;
+            base.Update(gameTime);
         }
     }
 }
