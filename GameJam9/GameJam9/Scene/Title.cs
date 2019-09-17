@@ -13,16 +13,25 @@ namespace GameJam9.Scene
     class Title : IScene
     {
         private bool isEndFlag;
+        private Renderer renderer;
 
         public Title()
         {
             isEndFlag = false;
+            renderer = Renderer.Instance;
             
         }
 
         public void Draw()
         {
-            GameDevice.Instance().GetGraphicsDevice().Clear(Color.Aqua);  
+            GameDevice.Instance().GetGraphicsDevice().Clear(Color.Aqua);
+
+            renderer.Begin();
+
+            renderer.DrawTexture("title", Vector2.Zero,Drawer.Default);
+
+            renderer.End();
+
         }
 
         public void Initialize()

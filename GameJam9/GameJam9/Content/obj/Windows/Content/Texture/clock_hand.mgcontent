@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock_hand.png</SourceFile>
-  <SourceTime>2019-09-10T15:19:06.4969479+09:00</SourceTime>
-  <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock_hand.xnb</DestFile>
-  <DestTime>2019-09-17T12:00:42.060883+09:00</DestTime>
+<<<<<<< HEAD
+  <SourceFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock_hand.png</SourceFile>
+  <SourceTime>2019-09-10T14:40:43.8632248+09:00</SourceTime>
+  <DestFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock_hand.xnb</DestFile>
+  <DestTime>2019-09-17T13:46:12.8876914+09:00</DestTime>
+=======
+  <SourceFile>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/clock_hand.png</SourceFile>
+  <SourceTime>2019-09-11T11:59:14.6371265+09:00</SourceTime>
+  <DestFile>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/clock_hand.xnb</DestFile>
+  <DestTime>2019-09-17T13:47:21.1408158+09:00</DestTime>
+>>>>>>> master
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

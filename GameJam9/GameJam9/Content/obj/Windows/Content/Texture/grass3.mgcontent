@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/grass3.png</SourceFile>
-  <SourceTime>2019-09-12T15:43:13.2932311+09:00</SourceTime>
-  <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/grass3.xnb</DestFile>
-  <DestTime>2019-09-17T12:00:42.1858537+09:00</DestTime>
+<<<<<<< HEAD
+  <SourceFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/grass3.png</SourceFile>
+  <SourceTime>2019-09-12T14:38:06.7563041+09:00</SourceTime>
+  <DestFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/grass3.xnb</DestFile>
+  <DestTime>2019-09-17T13:46:13.4971042+09:00</DestTime>
+=======
+  <SourceFile>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/grass3.png</SourceFile>
+  <SourceTime>2019-09-12T15:42:25.6394892+09:00</SourceTime>
+  <DestFile>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/grass3.xnb</DestFile>
+  <DestTime>2019-09-17T13:47:21.2634865+09:00</DestTime>
+>>>>>>> master
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

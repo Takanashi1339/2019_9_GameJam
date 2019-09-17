@@ -54,6 +54,8 @@ namespace GameJam9.Def
                 {"door",Path },
                 {"title",Path },
                 { "key" ,Path },
+                {"gameover",Path },
+                {"ending", Path },
 
                 //必要に応じて自分で追加
             };
