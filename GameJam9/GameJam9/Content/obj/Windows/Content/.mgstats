@@ -1,5 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest.csv","CopyItem","File",2531,2531,0
+"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest.csv","CopyItem","File",2530,2530,0.0019939
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG1.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG1.xnb","TextureProcessor","Texture2DContent",56522,1920085,0.1417368
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG2.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG2.xnb","TextureProcessor","Texture2DContent",67402,1920085,0.0625174
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG3.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG3.xnb","TextureProcessor","Texture2DContent",44771,1920085,0.0312461
