@@ -32,7 +32,8 @@ namespace GameJam9.Actor
         public override void Hit(GameObject gameObject)
         {
             var modify = GameDevice.Instance().DisplayModify;
-            if (!(Position.X + modify.X + Size.X >= 0 && Position.X + modify.X <= Screen.Width))
+            if (!(Position.X + modify.X + Size.X >= 0 && Position.X + modify.X <= Screen.Width)
+                || Position.Y > Screen.Height || Position.Y <= 0)
             {
                 IsDead = true;
             }

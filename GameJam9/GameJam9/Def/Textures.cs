@@ -47,13 +47,11 @@ namespace GameJam9.Def
                 { "temple_block1" , Path },
                 { "temple_block2", Path },
                 { "temple_block3", Path },
-<<<<<<< HEAD
                 { "magic_enemy" ,Path },
                 { "test_bullet", Path },
-=======
                 {"fox",Path },
                 {"caterpillar",Path },
->>>>>>> master
+                { "key" ,Path },
 
                 //必要に応じて自分で追加
             };

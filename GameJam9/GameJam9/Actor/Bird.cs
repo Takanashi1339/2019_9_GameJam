@@ -45,6 +45,7 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
+            if (!IsInScreen()) return;
             if (Position.X <= leftPosition.X ||
                 Position.X >= rightPosition.X)
             {
