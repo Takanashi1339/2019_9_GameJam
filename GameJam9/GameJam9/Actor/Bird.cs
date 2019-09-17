@@ -12,17 +12,15 @@ namespace GameJam9.Actor
     class Bird : Enemy
     {
         private Animation animation;
-        private Vector2 leftPosition;
-        private Vector2 rightPosition;
-        private int moveRange;
+        private Timer timer;
         private float flySpeed = -2f;
 
         public Bird(Vector2 position) 
             : base("bird", position, new Point(64,64), 10)
         {
-            moveRange = 3;
             Gravity = 0;
             Velocity = new Vector2(flySpeed, 0);
+            timer = new Timer(2, true);
         }
 
         public Bird(Bird other)
@@ -32,8 +30,6 @@ namespace GameJam9.Actor
 
         public override Entity Spawn(Map map, Vector2 position)
         {
-            leftPosition.X = position.X - Size.X * moveRange;
-            rightPosition.X = position.X + Size.X * moveRange;
             animation = new Animation(Size, 2, 0.1f);
             return base.Spawn(map, position);
         }
@@ -45,8 +41,8 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            if (Position.X <= leftPosition.X ||
-                Position.X >= rightPosition.X)
+            timer.Update(gameTime);
+            if(timer.IsTime)
             {
                 flySpeed *= -1;
             }
