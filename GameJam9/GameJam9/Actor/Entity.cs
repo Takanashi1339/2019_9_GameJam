@@ -19,6 +19,8 @@ namespace GameJam9.Actor
             protected set;
         } = 0.4f;
 
+        protected bool shiftable = true;
+
         public static readonly float MaxFallSpeed = 9.8f;
 
         public Entity(string name, Vector2 position, Point size)
@@ -53,6 +55,25 @@ namespace GameJam9.Actor
             }
         }
 
+        public void Shift()
+        {
+            if (!shiftable) return;
+            var map = GameObjectManager.Instance.Map;
+
+            var displayModify = (int)(-GameDevice.Instance().DisplayModify.X / Map.BlockSize);
+            var entityModify = Position.X / Map.BlockSize;
+            var shiftPosition = Position;
+            if (displayModify + map.Width / (Map.BlockSize * 2) < entityModify)
+            {
+                shiftPosition.X -= map.Width;
+            }
+            else if (displayModify - map.Width / (Map.BlockSize * 2) > entityModify)
+            {
+                shiftPosition.X += map.Width;
+            }
+            Position = shiftPosition;
+        }
+
         public bool IsInScreen()
         {
             var modify = GameDevice.Instance().DisplayModify;
@@ -78,6 +99,7 @@ namespace GameJam9.Actor
                 velocity.Y = MaxFallSpeed;
             }
             Velocity = velocity;
+            Shift();
             base.Update(gameTime);
         }
     }

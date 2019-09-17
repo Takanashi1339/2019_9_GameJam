@@ -29,6 +29,7 @@ namespace GameJam9.Actor
             hasKey = false;
             animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
+            shiftable = false;
         }
 
         public Player(Player other)
@@ -131,6 +132,7 @@ namespace GameJam9.Actor
             base.Draw(drawer);
         }
 
+        /*
         private void UpdateDisplayModify()
         {
             if (Position.X - Screen.Width / 2 + Size.X / 2 < 0)
@@ -144,6 +146,12 @@ namespace GameJam9.Actor
                 GameDevice.Instance().DisplayModify = new Vector2(-1 * (GameObjectManager.Instance.Map.Width - Screen.Width), 0);
                 return;
             }
+            GameDevice.Instance().DisplayModify = new Vector2(-Position.X + (Screen.Width / 2 - Size.X / 2), 0.0f);
+        }
+        */
+
+        private void UpdateDisplayModify()
+        {
             GameDevice.Instance().DisplayModify = new Vector2(-Position.X + (Screen.Width / 2 - Size.X / 2), 0.0f);
         }
     }

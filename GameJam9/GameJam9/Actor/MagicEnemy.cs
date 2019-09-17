@@ -20,7 +20,7 @@ namespace GameJam9.Actor
         public MagicEnemy( Vector2 position)
             : base("magic_enemy", position, new Point(32, 64), 20)
         {
-            timer = new Timer(3f, true);
+            timer = new Timer(2f, true);
         }
 
         public MagicEnemy(MagicEnemy other)
