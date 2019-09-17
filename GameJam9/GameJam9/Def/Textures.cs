@@ -51,6 +51,8 @@ namespace GameJam9.Def
                 { "test_bullet", Path },
                 {"fox",Path },
                 {"caterpillar",Path },
+                {"door",Path },
+                {"title",Path },
 
                 //必要に応じて自分で追加
             };

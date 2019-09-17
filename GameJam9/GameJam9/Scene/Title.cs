@@ -17,11 +17,12 @@ namespace GameJam9.Scene
         public Title()
         {
             isEndFlag = false;
+            
         }
 
         public void Draw()
         {
-            GameDevice.Instance().GetGraphicsDevice().Clear(Color.Aqua);
+            GameDevice.Instance().GetGraphicsDevice().Clear(Color.Aqua);  
         }
 
         public void Initialize()
