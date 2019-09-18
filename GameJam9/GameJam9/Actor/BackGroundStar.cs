@@ -48,7 +48,6 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            Console.WriteLine(StarAlpha);
             var angle = Clock.Instance.Angle;
             if (angle > MathHelper.ToRadians(290))
             {

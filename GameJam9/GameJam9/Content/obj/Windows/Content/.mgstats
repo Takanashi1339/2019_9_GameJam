@@ -1,7 +1,10 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/attack_magic_enemy.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/attack_magic_enemy.xnb","TextureProcessor","Texture2DContent",1486,32853,0.0997306
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG1.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG1.xnb","TextureProcessor","Texture2DContent",56522,1920085,0.2394315
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG2.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG2.xnb","TextureProcessor","Texture2DContent",67402,1920085,0.0846889
@@ -65,6 +68,7 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/test_player.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/test_player.xnb","TextureProcessor","Texture2DContent",460,8277,0.0265699
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/title.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/title.xnb","TextureProcessor","Texture2DContent",5737,1920085,0.1104311
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/Zenmaisou.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/Zenmaisou.xnb","TextureProcessor","Texture2DContent",1282,4181,0.0155859
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 6c32e01... Revert "Merge remote-tracking branch 'origin/master'"
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest2.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest2.csv","CopyItem","File",3308,3308,0.001995
@@ -134,3 +138,5 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 =======
 >>>>>>> master
 >>>>>>> parent of 6c32e01... Revert "Merge remote-tracking branch 'origin/master'"
+=======
+>>>>>>> master

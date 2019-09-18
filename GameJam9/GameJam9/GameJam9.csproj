@@ -61,6 +61,7 @@
     <Compile Include="Actor\GameObject.cs" />
     <Compile Include="Actor\Item.cs" />
     <Compile Include="Actor\Key.cs" />
+    <Compile Include="Actor\KeyIcon.cs" />
     <Compile Include="Actor\Log.cs" />
     <Compile Include="Actor\MagicEnemy.cs" />
     <Compile Include="Actor\Map.cs" />

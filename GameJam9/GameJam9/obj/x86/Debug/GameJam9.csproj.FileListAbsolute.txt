@@ -90,6 +90,7 @@ D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
@@ -192,3 +193,7 @@ D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJa
 =======
 >>>>>>> master
 >>>>>>> parent of 6c32e01... Revert "Merge remote-tracking branch 'origin/master'"
+=======
+D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csprojAssemblyReference.cache
+D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\keyicon.xnb
+>>>>>>> master
