@@ -27,6 +27,9 @@ namespace GameJam9.Def
                 { "BG1", Path},
                 { "BG2", Path},
                 { "BG3", Path},
+                { "BGf1", Path},
+                { "BGf2", Path},
+                { "BGf3", Path},
                 { "grass_block1", Path },
                 { "grass_block2", Path },
                 { "grass_block3", Path },
@@ -43,6 +46,7 @@ namespace GameJam9.Def
                 { "grass", Path },
                 { "grass2", Path },
                 { "grass3", Path },
+                { "mushroom", Path},
                 { "zenmaisou", Path },
                 { "temple_block1" , Path },
                 { "temple_block2", Path },
@@ -56,8 +60,17 @@ namespace GameJam9.Def
                 { "key" ,Path },
                 {"gameover",Path },
                 {"ending", Path },
+<<<<<<< HEAD
                 { "attack_magic_enemy", Path },
                 { "BGS", Path },
+=======
+                {"stump1",Path },
+                {"stump2",Path },
+                {"log1",Path },
+                {"log2",Path },
+                {"log3",Path },
+                {"log4",Path },
+>>>>>>> master
 
                 //必要に応じて自分で追加
             };

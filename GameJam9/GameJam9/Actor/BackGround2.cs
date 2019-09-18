@@ -11,7 +11,7 @@ namespace GameJam9.Actor
     class BackGround2 : BackGround
     {
         public BackGround2(Vector2 position)
-            : base("BG2", position, 0.2f)
+            : base("BGf2", position, 0.2f)
         {
         }
 

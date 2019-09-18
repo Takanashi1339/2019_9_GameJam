@@ -12,7 +12,7 @@ namespace GameJam9.Actor
     class Caterpillar : Enemy
     {
         private Animation animation;
-        private float walkSpeed = -3f;
+        private float walkSpeed = -1f;
 
         public Caterpillar(Vector2 position)
             : base("caterpillar", position, new Point(64,32), 10)
@@ -26,7 +26,7 @@ namespace GameJam9.Actor
 
         public override Entity Spawn(Map map, Vector2 position)
         {
-            animation = new Animation(Size, 2, 0.1f);
+            animation = new Animation(Size, 2, 0.3f);
             return base.Spawn(map, position);
         }
 
