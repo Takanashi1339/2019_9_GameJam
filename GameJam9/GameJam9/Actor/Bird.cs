@@ -16,7 +16,7 @@ namespace GameJam9.Actor
         private float flySpeed = -2f;
 
         public Bird(Vector2 position) 
-            : base("bat", position, new Point(64,64), 10)
+            : base("bird", position, new Point(64,64), 10)
         {
             Gravity = 0;
             Velocity = new Vector2(flySpeed, 0);
