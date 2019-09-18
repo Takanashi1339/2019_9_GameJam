@@ -9,6 +9,7 @@ using GameJam9.Actor;
 using GameJam9.Device;
 using GameJam9.Manager;
 using GameJam9.Util;
+using GameJam9.Def;
 
 namespace GameJam9.Scene
 {
@@ -23,10 +24,7 @@ namespace GameJam9.Scene
         private ParticleManager particleManager;
         private UIManager uiManager;
         private BackGround[] backGrounds;
-        private readonly string[] mapNames = {
-            "Maptest.csv",
-            "Maptest2.csv"
-        };
+        private MapDictionary.MapType mapType = MapDictionary.MapType.Plain;
 
         public GamePlay()
         {

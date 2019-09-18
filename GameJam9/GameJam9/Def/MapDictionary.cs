@@ -12,6 +12,17 @@ namespace GameJam9.Def
     {
         public static readonly Dictionary<string, GameObject> Data;
 
+        public enum MapType
+        {
+            Plain = 0,
+            Forest = 1
+        }
+
+        public static readonly string[] MapNames = {
+            "Maptest.csv",
+            "Maptest2.csv"
+        };
+
         static MapDictionary()
         {
             Data = new Dictionary<string, GameObject>();
