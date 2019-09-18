@@ -53,8 +53,16 @@ namespace GameJam9.Scene
             gameObjectManager.Initialize();
             particleManager.Initialize();
             uiManager.Initialize();
+            mapType = MapDictionary.MapType.Plain;
+            LoadMap(mapType);
+        }
 
-            // csvからマップを読み込む場合
+        public void LoadMap(MapDictionary.MapType type)
+        {
+            gameObjectManager.Initialize();
+            particleManager.Initialize();
+            uiManager.Initialize();
+            mapType = type;
             var reader = GameDevice.Instance().GetCSVReader();
             reader.Read(MapDictionary.MapNames[(int)mapType]);
             var map = new Map(reader.GetData());
@@ -63,14 +71,11 @@ namespace GameJam9.Scene
             clock = new Clock(Vector2.Zero);
             new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {
-                new BackGround1(Vector2.Zero),
+                new BackGround1(Vector2.Zero, mapType),
                 new BackGroundStar(Vector2.Zero),
-                new BackGround2(Vector2.Zero),
-                new BackGround3(Vector2.Zero),
+                new BackGround2(Vector2.Zero, mapType),
+                new BackGround3(Vector2.Zero, mapType),
             };
-
-            //空のマップ
-            //gameObjectManager.Add(new Map(new List<string[]>()));
         }
 
         public bool IsEnd()
@@ -97,16 +102,23 @@ namespace GameJam9.Scene
 
             if (gameObjectManager.Find<Door>()[0].IsEnd)
             {
-                //シーン移動
-                isEndFlag = true;
-                next = Scene.Ending;
+                mapType++;
+                if ((int)mapType == MapDictionary.MapNames.Count())
+                {
+                    //シーン移動
+                    isEndFlag = true;
+                    next = Scene.Ending;
+                }
+                else
+                {
+                    LoadMap(mapType);
+                }
             }
 
             if (clock.IsEnd)
             {
-                //シーン移動
-                isEndFlag = true;
-                next = Scene.GameOver;
+                //再スタート
+                LoadMap(mapType);
             }
         }
     }
