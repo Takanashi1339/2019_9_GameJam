@@ -68,8 +68,16 @@ namespace GameJam9.Def
                 {"log2",Path },
                 {"log3",Path },
                 {"log4",Path },
+<<<<<<< Updated upstream
                 { "keyicon", Path },
+<<<<<<< HEAD
                 { "itemlight", Path },
+=======
+=======
+                {"bat",Path },
+                {"bat1",Path },
+>>>>>>> Stashed changes
+>>>>>>> master
 
                 //必要に応じて自分で追加
             };

@@ -52,6 +52,78 @@
 /processorParam:TextureFormat=Color
 /build:Texture/BG1.png
 
+#begin Texture/attack_magic_enemy.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/attack_magic_enemy.png
+
+#begin Texture/bat.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/bat.png
+
+#begin Texture/bat.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/bat.png
+
+#begin Texture/bat1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/bat1.png
+
+#begin Texture/bat1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/bat1.png
+
+#begin Texture/BG1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/BG1.png
+
 #begin Texture/BG1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -256,7 +328,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/caterpillar.png
 
+<<<<<<< Updated upstream
 #begin Texture/Clock.png
+=======
+#begin Texture/clock.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -266,7 +342,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
 /build:Texture/Clock.png
+=======
+/build:Texture/clock.png
+>>>>>>> Stashed changes
 
 #begin Texture/Clock.png
 /importer:TextureImporter
@@ -759,6 +839,21 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Texture/grass_block2.png
+<<<<<<< Updated upstream
+
+#begin Texture/grass_block3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/grass_block3.png
+=======
+>>>>>>> Stashed changes
 
 #begin Texture/grass_block3.png
 /importer:TextureImporter
@@ -772,7 +867,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass_block3.png
 
+<<<<<<< Updated upstream
+#begin Texture/grass2.png
+=======
 #begin Texture/grass_block3.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -782,7 +881,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
+/build:Texture/grass2.png
+=======
 /build:Texture/grass_block3.png
+>>>>>>> Stashed changes
 
 #begin Texture/grass2.png
 /importer:TextureImporter
@@ -796,7 +899,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass2.png
 
+<<<<<<< Updated upstream
+#begin Texture/grass3.png
+=======
 #begin Texture/grass2.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -806,7 +913,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
+/build:Texture/grass3.png
+=======
 /build:Texture/grass2.png
+>>>>>>> Stashed changes
 
 #begin Texture/grass3.png
 /importer:TextureImporter
@@ -820,7 +931,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/grass3.png
 
+<<<<<<< Updated upstream
+#begin Texture/gun1.png
+=======
 #begin Texture/grass3.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -830,7 +945,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
+/build:Texture/gun1.png
+=======
 /build:Texture/grass3.png
+>>>>>>> Stashed changes
 
 #begin Texture/gun1.png
 /importer:TextureImporter
@@ -844,7 +963,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/gun1.png
 
+<<<<<<< Updated upstream
+#begin Texture/gun2.png
+=======
 #begin Texture/gun1.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -854,7 +977,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
+/build:Texture/gun2.png
+=======
 /build:Texture/gun1.png
+>>>>>>> Stashed changes
 
 #begin Texture/gun2.png
 /importer:TextureImporter
@@ -868,7 +995,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/gun2.png
 
+<<<<<<< Updated upstream
+#begin Texture/hammer.png
+=======
 #begin Texture/gun2.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -878,7 +1009,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
+/build:Texture/hammer.png
+=======
 /build:Texture/gun2.png
+>>>>>>> Stashed changes
 
 #begin Texture/hammer.png
 /importer:TextureImporter
@@ -892,18 +1027,7 @@
 /processorParam:TextureFormat=Color
 /build:Texture/hammer.png
 
-#begin Texture/hammer.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Texture/hammer.png
-
+<<<<<<< HEAD
 #begin Texture/itemlight.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -916,7 +1040,13 @@
 /processorParam:TextureFormat=Color
 /build:Texture/itemlight.png
 
+=======
+<<<<<<< Updated upstream
+>>>>>>> master
 #begin Texture/key.png
+=======
+#begin Texture/hammer.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -926,7 +1056,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
 /build:Texture/key.png
+=======
+/build:Texture/hammer.png
+>>>>>>> Stashed changes
 
 #begin Texture/key.png
 /importer:TextureImporter
@@ -940,7 +1074,11 @@
 /processorParam:TextureFormat=Color
 /build:Texture/key.png
 
+<<<<<<< Updated upstream
 #begin Texture/keyicon.png
+=======
+#begin Texture/key.png
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -950,7 +1088,11 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
 /build:Texture/keyicon.png
+=======
+/build:Texture/key.png
+>>>>>>> Stashed changes
 
 #begin Texture/keyicon.png
 /importer:TextureImporter
