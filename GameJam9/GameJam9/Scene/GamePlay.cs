@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -56,6 +56,8 @@ namespace GameJam9.Scene
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();
+            reader.Read(MapDictionary.MapNames[(int)mapType]);
+            reader.Read("Maptest.csv");
             reader.Read(MapDictionary.MapNames[(int)mapType]);
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
