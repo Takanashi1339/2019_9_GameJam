@@ -24,6 +24,7 @@ namespace GameJam9.Actor
         {
             isOpen = false;
             animation = new Animation(Size, 4, 0.25f, false);
+            Gravity = 0f;
         }
 
         public Door(Door other)

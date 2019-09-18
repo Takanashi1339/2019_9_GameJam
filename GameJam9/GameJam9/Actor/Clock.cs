@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameJam9.Device;
+using GameJam9.Manager;
 using GameJam9.Util;
 using Microsoft.Xna.Framework;
 
@@ -132,7 +133,10 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
-            timer.Update(gameTime);
+            if (!GameObjectManager.Instance.Find<Player>()[0].MoveLock)
+            {
+                timer.Update(gameTime);
+            }
             angle = MathHelper.ToRadians(360 * timer.Location);
         }
 

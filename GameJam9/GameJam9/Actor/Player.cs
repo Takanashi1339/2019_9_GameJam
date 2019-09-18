@@ -15,12 +15,16 @@ namespace GameJam9.Actor
 {
     class Player : Entity
     {
-        //#TODO ドアに触れたままアニメーションするミスあり
         private bool isJump;
         private bool isLeft;
         private float speed;
         private Animation animation;
-        private bool moveLock;
+
+        public bool MoveLock
+        {
+            get;
+            private set;
+        } = false;
         public bool HasKey
         {
             get;
@@ -32,7 +36,6 @@ namespace GameJam9.Actor
         {
             isJump = false;
             isLeft = false;
-            moveLock = false;
             animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
             shiftable = false;
@@ -50,7 +53,7 @@ namespace GameJam9.Actor
         public override void Update(GameTime gameTime)
         {
             var velocity = Velocity;
-            if (moveLock)
+            if (MoveLock)
             {
                 UpdateDisplayModify();
                 Velocity = Vector2.Zero;
@@ -115,14 +118,14 @@ namespace GameJam9.Actor
             }
             if(gameObject is Door && HasKey)
             {
-                moveLock = true;
+                MoveLock = true;
             }
             UpdateDisplayModify();
         }
 
         public override void Draw()
         {
-            if (!isJump && Math.Abs(Input.Velocity().X) > 0)
+            if (!isJump && Math.Abs(Input.Velocity().X) > 0 && !MoveLock)
             {
                 Name = "player_walk";
             }
