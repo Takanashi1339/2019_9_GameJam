@@ -60,17 +60,14 @@ namespace GameJam9.Def
                 { "key" ,Path },
                 {"gameover",Path },
                 {"ending", Path },
-<<<<<<< HEAD
                 { "attack_magic_enemy", Path },
                 { "BGS", Path },
-=======
                 {"stump1",Path },
                 {"stump2",Path },
                 {"log1",Path },
                 {"log2",Path },
                 {"log3",Path },
                 {"log4",Path },
->>>>>>> master
 
                 //必要に応じて自分で追加
             };
