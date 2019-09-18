@@ -69,6 +69,7 @@ namespace GameJam9.Def
                 {"log3",Path },
                 {"log4",Path },
                 { "keyicon", Path },
+                { "itemlight", Path },
 
                 //必要に応じて自分で追加
             };

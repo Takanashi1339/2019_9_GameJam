@@ -16,14 +16,6 @@
 #begin CSV/Maptest.csv
 /copy:CSV/Maptest.csv
 
-<<<<<<< HEAD
-#begin CSV/Maptest2.csv
-/copy:CSV/Maptest2.csv
-<<<<<<< HEAD
-=======
-
-=======
->>>>>>> master
 #begin Texture/attack_magic_enemy.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -35,10 +27,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Texture/attack_magic_enemy.png
-<<<<<<< HEAD
->>>>>>> parent of 6c32e01... Revert "Merge remote-tracking branch 'origin/master'"
-=======
->>>>>>> master
 
 #begin Texture/attack_magic_enemy.png
 /importer:TextureImporter
@@ -916,6 +904,18 @@
 /processorParam:TextureFormat=Color
 /build:Texture/hammer.png
 
+#begin Texture/itemlight.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/itemlight.png
+
 #begin Texture/key.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -939,6 +939,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Texture/key.png
+
+#begin Texture/keyicon.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/keyicon.png
 
 #begin Texture/keyicon.png
 /importer:TextureImporter
