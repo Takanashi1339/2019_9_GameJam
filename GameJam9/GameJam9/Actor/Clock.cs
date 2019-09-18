@@ -93,7 +93,7 @@ namespace GameJam9.Actor
             {
                 var color = Color.White;
                 var bgColor = SkyColor;
-                byte rate = 3;
+                byte rate = 2;
                 color.R -= bgColor.R;
                 color.R /= rate;
                 color.R += bgColor.R;
