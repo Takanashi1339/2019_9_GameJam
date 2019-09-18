@@ -1,7 +1,9 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/attack_magic_enemy.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/attack_magic_enemy.xnb","TextureProcessor","Texture2DContent",1486,32853,0.0997306
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG1.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG1.xnb","TextureProcessor","Texture2DContent",56522,1920085,0.1562162
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG2.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG2.xnb","TextureProcessor","Texture2DContent",67402,1920085,0.0624847
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BG3.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BG3.xnb","TextureProcessor","Texture2DContent",44771,1920085,0.046863
+"D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/BGS.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/BGS.xnb","TextureProcessor","Texture2DContent",6688,1920085,0.140651
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/bird.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/bird.xnb","TextureProcessor","Texture2DContent",1321,32853,0.0156527
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/caterpillar.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/caterpillar.xnb","TextureProcessor","Texture2DContent",1007,16469,0.0155889
 "D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/Clock.png","D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/Clock.xnb","TextureProcessor","Texture2DContent",13962,65621,0

@@ -60,8 +60,9 @@ namespace GameJam9.Scene
             new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {
                 new BackGround1(Vector2.Zero),
+                new BackGroundStar(Vector2.Zero),
                 new BackGround2(Vector2.Zero),
-                new BackGround3(Vector2.Zero)
+                new BackGround3(Vector2.Zero),
             };
 
             //空のマップ

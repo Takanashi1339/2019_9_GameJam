@@ -23,6 +23,11 @@ namespace GameJam9.Actor
             timer = new Timer(2f, true);
         }
 
+        public void AnimationInitialize()
+        {
+            Name = "magic_enemy";
+            animation = new Animation(Size, 4, 0.25f);
+        }
         public MagicEnemy(MagicEnemy other)
             :this(other.Position)
         { }
@@ -44,9 +49,19 @@ namespace GameJam9.Actor
             rotate = PlayerPosition - Position;
             rotate.Normalize();
             timer.Update(gameTime);
+            if(timer.Location == 0.5f)
+            {
+                Name = "attack_" + Name;
+                animation = new Animation(Size, 4, 0.25f, false);
+            }
             if (timer.IsTime)
             {
                 new TestBullet(Position, rotate).Spawn(GameObjectManager.Instance.Map, Position);
+
+            }
+            if (animation.IsEnd)
+            {
+                AnimationInitialize();
             }
             Velocity = new Vector2(walkSpeed, Velocity.Y);
             animation.Update(gameTime);

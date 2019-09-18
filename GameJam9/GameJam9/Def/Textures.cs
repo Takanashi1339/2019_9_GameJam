@@ -56,6 +56,8 @@ namespace GameJam9.Def
                 { "key" ,Path },
                 {"gameover",Path },
                 {"ending", Path },
+                { "attack_magic_enemy", Path },
+                { "BGS", Path },
 
                 //必要に応じて自分で追加
             };

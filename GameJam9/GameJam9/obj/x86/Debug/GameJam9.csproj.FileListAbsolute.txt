@@ -166,3 +166,5 @@ D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJa
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.csproj.CopyComplete
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.exe
 D:\K019G1339\1年\GameJam9\2019_9_GameJam\GameJam9\GameJam9\obj\x86\Debug\GameJam9.pdb
+D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\attack_magic_enemy.xnb
+D:\9月ゲームジャム\2019_9_GameJam\GameJam9\GameJam9\bin\Windows\x86\Debug\Content\Texture\BGS.xnb

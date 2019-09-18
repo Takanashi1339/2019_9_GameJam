@@ -13,9 +13,13 @@ namespace GameJam9.Actor
     class Clock : UI
     {
         private Timer timer;
-        private float angle;
         private string clockHand = "clock_hand";
 
+        public float Angle
+        {
+            get;
+            private set;
+        }
         public static Clock Instance
         {
             get;
@@ -137,7 +141,7 @@ namespace GameJam9.Actor
             {
                 timer.Update(gameTime);
             }
-            angle = MathHelper.ToRadians(360 * timer.Location);
+            Angle = MathHelper.ToRadians(360 * timer.Location);
         }
 
         public Clock(Clock other)
@@ -158,7 +162,7 @@ namespace GameJam9.Actor
             base.Draw();
             var drawer = Drawer.Default;
             drawer.Origin = Size.ToVector2() / 2;
-            drawer.Rotation = angle;
+            drawer.Rotation = Angle;
             Renderer.Instance.DrawTexture(clockHand, Position, drawer);
         }
     }

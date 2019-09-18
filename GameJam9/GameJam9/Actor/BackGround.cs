@@ -13,6 +13,7 @@ namespace GameJam9.Actor
 {
     abstract class BackGround : GameObject
     {
+        protected bool isSkyColor = true;
         protected float speed;
 
         public BackGround(string name, Vector2 position, float speed) 
@@ -23,7 +24,7 @@ namespace GameJam9.Actor
         
         protected override void Draw(Drawer drawer)
         {
-            drawer.Color = Clock.Instance.BackGroundColor;
+            if(isSkyColor)drawer.Color = Clock.Instance.BackGroundColor;
             if (Position.X > 0)
             {
                 Renderer.Instance.DrawTexture(Name, Position - new Vector2(Size.X, 0), drawer);
