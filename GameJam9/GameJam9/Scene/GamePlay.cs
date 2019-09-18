@@ -17,6 +17,7 @@ namespace GameJam9.Scene
         private bool isEndFlag;
         private Scene next;
         private Clock clock;
+        private KeyIcon keyIcon;
 
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
@@ -57,9 +58,10 @@ namespace GameJam9.Scene
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();
-            reader.Read("Maptest2.csv");
+            reader.Read("Maptest.csv");
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
+            keyIcon = new KeyIcon(Vector2.Zero);
             clock = new Clock(Vector2.Zero);
             new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {

@@ -49,21 +49,29 @@ namespace GameJam9.Actor
             rotate = PlayerPosition - Position;
             rotate.Normalize();
             timer.Update(gameTime);
-            if(timer.Location == 0.5f)
+            Velocity = new Vector2(walkSpeed, Velocity.Y);
+            if ((Position.X  - PlayerPosition.X > 0 && Velocity.X > 0)
+                || (Position.X - PlayerPosition.X < 0 && Velocity.X <　0))
+            {
+                walkSpeed *= -1;
+            }
+            if (timer.Location == 0.5f)
             {
                 Name = "attack_" + Name;
                 animation = new Animation(Size, 4, 0.25f, false);
             }
+            if(timer.Location > 0.5f)
+            {
+                Velocity = Vector2.Zero;
+            }
             if (timer.IsTime)
             {
                 new TestBullet(Position, rotate).Spawn(GameObjectManager.Instance.Map, Position);
-
             }
             if (animation.IsEnd)
             {
                 AnimationInitialize();
             }
-            Velocity = new Vector2(walkSpeed, Velocity.Y);
             animation.Update(gameTime);
 
             base.Update(gameTime);
@@ -71,14 +79,14 @@ namespace GameJam9.Actor
 
         public override void Hit(GameObject gameObject)
         {
-            if(gameObject is Block block && block.IsSolid)
-            {
-                var direction = CheckDirection(block);
-                if(direction == Direction.Left || direction == Direction.Right)
-                {
-                    walkSpeed *= -1;
-                }
-            }
+            //if(gameObject is Block block && block.IsSolid)
+            //{
+            //    var direction = CheckDirection(block);
+            //    if(direction == Direction.Left || direction == Direction.Right)
+            //    {
+            //        walkSpeed *= -1;
+            //    }
+            //}
             base.Hit(gameObject);
         }
         public override void Draw()

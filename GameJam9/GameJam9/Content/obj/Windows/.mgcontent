@@ -42,6 +42,7 @@
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/gun2.png</File>
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/hammer.png</File>
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/key.png</File>
+    <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/keyicon.png</File>
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/lighter.png</File>
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/lighter_fire.png</File>
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/log1.png</File>
@@ -68,6 +69,7 @@
     <File>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/Zenmaisou.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
