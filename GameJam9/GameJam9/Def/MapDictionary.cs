@@ -10,17 +10,6 @@ namespace GameJam9.Def
 {
     static class MapDictionary
     {
-        public enum MapType
-        {
-            Plain = 0,
-            Forest = 1
-        }
-
-        public static readonly string[] MapNames = {
-            "Maptest.csv",
-            "Maptest2.csv"
-        };
-
         public static readonly Dictionary<string, GameObject> Data;
 
         static MapDictionary()

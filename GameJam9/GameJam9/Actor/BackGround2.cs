@@ -1,5 +1,4 @@
-﻿using GameJam9.Def;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +10,13 @@ namespace GameJam9.Actor
     //最奥
     class BackGround2 : BackGround
     {
-        private static string[] names = new string[]
-        {
-            "BG2",
-            "BGf2"
-        };
-
-        public BackGround2(Vector2 position, MapDictionary.MapType type)
-            : base(names[(int)type], position, 0.2f)
+        public BackGround2(Vector2 position)
+            : base("BGf2", position, 0.2f)
         {
         }
 
         public BackGround2(BackGround2 other)
-            : base(other.Name, other.Position, other.speed)
+            : this(other.Position)
         {
 
         }

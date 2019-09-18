@@ -9,7 +9,6 @@ using GameJam9.Actor;
 using GameJam9.Device;
 using GameJam9.Manager;
 using GameJam9.Util;
-using GameJam9.Def;
 
 namespace GameJam9.Scene
 {
@@ -24,8 +23,10 @@ namespace GameJam9.Scene
         private ParticleManager particleManager;
         private UIManager uiManager;
         private BackGround[] backGrounds;
-
-        private MapDictionary.MapType mapType = MapDictionary.MapType.Forest;
+        private readonly string[] mapNames = {
+            "Maptest.csv",
+            "Maptest2.csv"
+        };
 
         public GamePlay()
         {
@@ -57,31 +58,21 @@ namespace GameJam9.Scene
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();
-<<<<<<< HEAD
             reader.Read("Maptest.csv");
-=======
-            reader.Read(MapDictionary.MapNames[(int)mapType]);
->>>>>>> master
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
             keyIcon = new KeyIcon(Vector2.Zero);
             clock = new Clock(Vector2.Zero);
             new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {
-                new BackGround1(Vector2.Zero, mapType),
+                new BackGround1(Vector2.Zero),
                 new BackGroundStar(Vector2.Zero),
-                new BackGround2(Vector2.Zero, mapType),
-                new BackGround3(Vector2.Zero, mapType),
+                new BackGround2(Vector2.Zero),
+                new BackGround3(Vector2.Zero),
             };
 
             //空のマップ
             //gameObjectManager.Add(new Map(new List<string[]>()));
-        }
-
-        public void LoadMap(MapDictionary.MapType type)
-        {
-            mapType = type;
-            Initialize();
         }
 
         public bool IsEnd()
