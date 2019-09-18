@@ -16,6 +16,9 @@
 #begin CSV/Maptest.csv
 /copy:CSV/Maptest.csv
 
+#begin CSV/Maptest2.csv
+/copy:CSV/Maptest2.csv
+
 #begin Texture/attack_magic_enemy.png
 /importer:TextureImporter
 /processor:TextureProcessor
