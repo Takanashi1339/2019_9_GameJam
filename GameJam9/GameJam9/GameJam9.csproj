@@ -54,6 +54,8 @@
     <Compile Include="Actor\DropItem.cs" />
     <Compile Include="Actor\Enemy.cs" />
     <Compile Include="Actor\Entity.cs" />
+    <Compile Include="Actor\ForestBlock.cs" />
+    <Compile Include="Actor\ForestGrass.cs" />
     <Compile Include="Actor\Fox.cs" />
     <Compile Include="Actor\GameObject.cs" />
     <Compile Include="Actor\Item.cs" />

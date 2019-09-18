@@ -22,6 +22,10 @@ namespace GameJam9.Scene
         private ParticleManager particleManager;
         private UIManager uiManager;
         private BackGround[] backGrounds;
+        private readonly string[] mapNames = {
+            "Maptest.csv",
+            "Maptest2.csv"
+        };
 
         public GamePlay()
         {
@@ -53,7 +57,7 @@ namespace GameJam9.Scene
 
             // csvからマップを読み込む場合
             var reader = GameDevice.Instance().GetCSVReader();
-            reader.Read("Maptest.csv");
+            reader.Read("Maptest2.csv");
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
             clock = new Clock(Vector2.Zero);
