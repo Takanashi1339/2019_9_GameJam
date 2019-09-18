@@ -37,14 +37,15 @@ namespace GameJam9.Def
             Data.Add("E2", new Bird(Vector2.Zero));
             Data.Add("E3", new MagicEnemy(Vector2.Zero));
             Data.Add("E4", new Caterpillar(Vector2.Zero));
+            Data.Add("E5", new Bat(Vector2.Zero));
             Data.Add("iK", new DropItem(new Key(), Vector2.Zero));
             Data.Add("d", new Door(Vector2.Zero));
             //Data.Add("S1", new Stump(0));
             //Data.Add("S2", new Stump(1));
             //Data.Add("L1", new Log(0));
             //Data.Add("L2", new Log(1));
-            //Data.Add("L2", new Log(2));
-            //Data.Add("L2", new Log(3));
+            //Data.Add("L3", new Log(2));
+            //Data.Add("L4", new Log(3));
             //ここにEntity/Blockを追加
         }
     }
