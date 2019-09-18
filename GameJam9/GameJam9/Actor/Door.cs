@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameJam9.Device;
+using GameJam9.Manager;
 using GameJam9.Util;
 using Microsoft.Xna.Framework;
 
@@ -12,6 +14,8 @@ namespace GameJam9.Actor
     {
         private Animation animation;
         private bool isOpen;
+        private float scaleChange;
+        private float drawscale;
 
         public bool IsEnd
         {
@@ -22,6 +26,8 @@ namespace GameJam9.Actor
         public Door(Vector2 position)
             : base("door", position, new Point(32, 64))
         {
+            scaleChange = 0.01f;
+            drawscale = 1f;
             isOpen = false;
             animation = new Animation(Size, 4, 0.25f, false);
             Gravity = 0f;
@@ -37,6 +43,11 @@ namespace GameJam9.Actor
 
         public override void Update(GameTime gameTime)
         {
+            if (drawscale < 0.5f || drawscale > 1.5f)
+            {
+                scaleChange *= -1;
+            }
+            drawscale += scaleChange;
             base.Update(gameTime);
             if(isOpen)
             {
@@ -59,6 +70,14 @@ namespace GameJam9.Actor
 
         public override void Draw()
         {
+            if(GameObjectManager.Instance.Find<Player>()[0].HasKey)
+            {
+                var lightDrawer = Drawer.Default;
+                lightDrawer.DisplayModify = true;
+                lightDrawer.Scale = Vector2.One * drawscale;
+                lightDrawer.Origin = new Rectangle(Point.Zero, new Point(96, 96)).Center.ToVector2();
+                Renderer.Instance.DrawTexture("itemlight", Position - new Vector2(Size.X, Size.Y / 2), lightDrawer);
+            }
             var drawer = Drawer.Default;
             drawer.Rectangle = animation.GetRectangle();
             base.Draw(drawer);
