@@ -92,7 +92,7 @@ namespace GameJam9.Scene
             //描画開始
             renderer.Begin();
 
-            renderer.DrawTexture("load", new Vector2(20, 20), Drawer.Default);
+            renderer.DrawTexture("loading", Vector2.Zero, Drawer.Default);
 
             //現在読み込んでいる数を取得
             int currentCount =
@@ -106,21 +106,23 @@ namespace GameJam9.Scene
                 //読み込んだ割合
                 float rate = (float)currentCount / totalResouceNum;
 
-                /*
-                //数字で描画
+
+                ////数字で描画
                 renderer.DrawNumber(
                     "number",
                     new Vector2(20, 100),
                     (int)(rate * 100.0f));
-                */
+
+
 
                 //バーで描画
                 var drawer = new Drawer();
-                drawer.Scale = new Vector2(rate * Screen.Width, 20);
+                //drawer.Scale = new Vector2(rate * Screen.Width, 20);
+                drawer.Rectangle = new Rectangle(0, 0, (int)(rate * Screen.Width), 20);
 
                 renderer.DrawTexture(
-                    "white",
-                    new Vector2(0, 500),
+                    "load",
+                    new Vector2(0, 400),
                     drawer);
             }
 

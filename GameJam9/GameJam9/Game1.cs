@@ -71,7 +71,9 @@ namespace GameJam9
             // 画像を描画するために、スプライトバッチオブジェクトの実体生成
 
             // この下にロジックを記述
-
+            Renderer.Instance.LoadContent("loading", "./Texture/");
+            Renderer.Instance.LoadContent("number", "./Texture/");
+            Renderer.Instance.LoadContent("load", "./Texture/");
 
             // この上にロジックを記述
         }

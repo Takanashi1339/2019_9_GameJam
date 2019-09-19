@@ -87,7 +87,7 @@ namespace GameJam9.Device
                     textures[assetName], //テクスチャ
                     position + drawer.Origin
                         + ((drawer.DisplayModify)
-                            ? GameDevice.Instance().DisplayModify 
+                            ? GameDevice.Instance().DisplayModify
                             : Vector2.Zero),
                     drawer.Rectangle,
                     drawer.Color * drawer.Alpha,
@@ -97,6 +97,31 @@ namespace GameJam9.Device
                     drawer.SpriteEffects,
                     drawer.LayerDepth
                     );
+            }
+        }
+
+        public void DrawNumber(
+            string assetName,
+            Vector2 position,
+            int number,
+            float alpha = 1.0f)
+        {
+            if (number < 0)
+            {
+                number = 0;
+            }
+
+            int width = 32;
+
+            foreach (var n in number.ToString())
+            {
+                spriteBatch.Draw(
+                    textures[assetName],
+                    position,
+                    new Rectangle((n - '0') * width, 0, width, 64),
+                    Color.White);
+
+                position.X += width;
             }
         }
     }
