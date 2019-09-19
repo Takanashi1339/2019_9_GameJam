@@ -19,6 +19,7 @@ namespace GameJam9.Scene
         private Scene next;
         private Clock clock;
         private KeyIcon keyIcon;
+        private Fade fade;
 
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
@@ -42,6 +43,7 @@ namespace GameJam9.Scene
             Array.ForEach(backGrounds, bg => bg.Draw());
             gameObjectManager.Draw();
             particleManager.Draw();
+            fade.Draw();
             uiManager.Draw();
             Renderer.Instance.End();
         }
@@ -68,8 +70,8 @@ namespace GameJam9.Scene
             var map = new Map(reader.GetData());
             gameObjectManager.Add(map);
             keyIcon = new KeyIcon(Vector2.Zero);
+            fade = new Fade(Vector2.Zero,Fade.FadeOption.Out);
             clock = new Clock(Vector2.Zero);
-            new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {
                 new BackGround1(Vector2.Zero, mapType),
                 new BackGroundStar(Vector2.Zero),
@@ -99,6 +101,7 @@ namespace GameJam9.Scene
             gameObjectManager.Update(gameTime);
             particleManager.Update(gameTime);
             uiManager.Update(gameTime);
+            fade.Update(gameTime);
 
             if (gameObjectManager.Find<Door>()[0].IsEnd)
             {

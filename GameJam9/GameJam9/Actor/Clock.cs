@@ -32,6 +32,14 @@ namespace GameJam9.Actor
             private set;
         }
 
+        public bool IsTime
+        {
+            get
+            {
+                return timer.IsTime;
+            }
+        }
+
         //時間別の色
         private static readonly Color[] SkyColors = 
         {
@@ -52,7 +60,6 @@ namespace GameJam9.Actor
                 var colorLocation = timer.Location * SkyColors.Length - colorIndex;
                 if (colorIndex == SkyColors.Length)
                 {
-                    IsEnd = true;
                     return SkyColors[0];
                 }
                 var startColor = SkyColors[colorIndex];
@@ -141,7 +148,18 @@ namespace GameJam9.Actor
             {
                 timer.Update(gameTime);
             }
+            if(timer.IsTime)
+            {
+                Angle -= (1f / 6f);
+                if(Angle < 0)
+                {
+                    IsEnd = true;
+                }
+                base.Update(gameTime);
+                return;
+            }
             Angle = MathHelper.ToRadians(360 * timer.Location);
+            base.Update(gameTime);
         }
 
         public Clock(Clock other)

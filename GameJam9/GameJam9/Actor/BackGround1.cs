@@ -14,7 +14,8 @@ namespace GameJam9.Actor
         private static readonly string[] names = new string[]
         {
             "BG1",
-            "BGf1"
+            "BGf1",
+            "BG1",
         };
 
         public BackGround1(Vector2 position, MapDictionary.MapType type)

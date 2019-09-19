@@ -15,12 +15,14 @@ namespace GameJam9.Def
         public enum MapType
         {
             Plain = 0,
-            Forest = 1
+            Forest = 1,
+            Temple = 2,
         }
 
         public static readonly string[] MapNames = {
             "Maptest.csv",
-            "Maptest2.csv"
+            "Maptest2.csv",
+            "Maptest3.csv"
         };
 
         static MapDictionary()
@@ -29,7 +31,9 @@ namespace GameJam9.Def
             Data.Add("0", new Space());
             Data.Add("1", new TestBlock());
             Data.Add("2", new Dirt());
+            Data.Add("2d", new DirtWall());
             Data.Add("3", new ForestBlock());
+            Data.Add("4", new TempleBlock());
             Data.Add("g", new RandomGrass());
             Data.Add("fg", new ForestGrass());
             Data.Add("P", new Player(Vector2.Zero));

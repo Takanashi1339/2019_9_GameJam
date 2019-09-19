@@ -56,10 +56,15 @@ namespace GameJam9.Actor
             if (MoveLock)
             {
                 UpdateDisplayModify();
-                Velocity = Vector2.Zero;
+                velocity.X = 0;
+                Velocity = velocity;
+                if (isJump)
+                {
+                    base.Update(gameTime);
+                }
                 return;
             }
-            if (Input.GetKeyTrigger(Keys.W) && !isJump)
+            if (Input.GetKeyTrigger(Input.Up) && !isJump)
             {
                 velocity.Y = -10.0f;//仮の移動量
                 isJump = true;
@@ -116,7 +121,7 @@ namespace GameJam9.Actor
             {
                 HasKey = true;
             }
-            if(gameObject is Door && HasKey)
+            if(gameObject is Door && HasKey || Clock.Instance.IsTime)
             {
                 MoveLock = true;
             }

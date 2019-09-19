@@ -37,6 +37,7 @@ namespace GameJam9.Def
                 { "forest_block2", Path },
                 { "forest_block3", Path },
                 { "dirt_block", Path },
+                { "dirt_wall", Path },
                 { "bird",Path},
                 { "flower1", Path },
                 { "flower2", Path },
@@ -70,8 +71,9 @@ namespace GameJam9.Def
                 {"log4",Path },
                 { "keyicon", Path },
                 { "itemlight", Path },
-                {"bat",Path },
-                {"bat1",Path },
+                { "bat" ,Path },
+                { "bat1",Path },
+                { "fade" ,Path},
 
                 //必要に応じて自分で追加
             };

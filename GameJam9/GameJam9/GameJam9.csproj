@@ -52,10 +52,12 @@
     <Compile Include="Actor\Caterpillar.cs" />
     <Compile Include="Actor\Clock.cs" />
     <Compile Include="Actor\Dirt.cs" />
+    <Compile Include="Actor\DirtWall.cs" />
     <Compile Include="Actor\Door.cs" />
     <Compile Include="Actor\DropItem.cs" />
     <Compile Include="Actor\Enemy.cs" />
     <Compile Include="Actor\Entity.cs" />
+    <Compile Include="Actor\Fade.cs" />
     <Compile Include="Actor\ForestBlock.cs" />
     <Compile Include="Actor\ForestGrass.cs" />
     <Compile Include="Actor\Fox.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Actor\RandomGrass.cs" />
     <Compile Include="Actor\Space.cs" />
     <Compile Include="Actor\Stump.cs" />
+    <Compile Include="Actor\TempleBlock.cs" />
     <Compile Include="Actor\TestBlock.cs" />
     <Compile Include="Actor\TestBullet.cs" />
     <Compile Include="Actor\TestEnemy01.cs" />
