@@ -35,6 +35,7 @@ namespace GameJam9.Actor
         public Point Size
         {
             get;
+            protected set;
         }
 
         public Vector2 Velocity
