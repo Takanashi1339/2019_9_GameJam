@@ -29,7 +29,7 @@ namespace GameJam9.Actor
             scaleChange = 0.01f;
             drawscale = 1f;
             isOpen = false;
-            animation = new Animation(Size, 4, 0.25f, false);
+            animation = new Animation(Size, 4, 0.025f, false);
             Gravity = 0f;
         }
 
@@ -48,7 +48,6 @@ namespace GameJam9.Actor
                 scaleChange *= -1;
             }
             drawscale += scaleChange;
-            base.Update(gameTime);
             if(isOpen)
             {
                 if (animation.IsEnd)
@@ -57,6 +56,7 @@ namespace GameJam9.Actor
                 }
                 animation.Update(gameTime);
             }
+            base.Update(gameTime);
         }
 
         public override void Hit(GameObject gameObject)
