@@ -11,8 +11,9 @@ namespace GameJam9.Actor
 {
     class KeyIcon : UI
     {
+        private Rectangle rectangle;
         public KeyIcon(Vector2 position)
-            : base("keyicon",position, new Point(32, 32), 1, 1)
+            : base("keyicon",position, new Point(128, 64), 1, 1)
         {
             Position = new Vector2(128, 0);
         }
@@ -29,13 +30,24 @@ namespace GameJam9.Actor
         {
         }
 
+        public override void Update(GameTime gameTime)
+        {
+            rectangle = Rectangle;
+            if(!(GameObjectManager.Instance.Find<Player>().First().HasKey))
+            {
+                rectangle = new Rectangle(Point.Zero, new Point(Size.X / 2, Size.Y));
+            }
+            else
+            {
+                rectangle = new Rectangle(new Point(Size.X / 2, 0), Size);
+            }
+            base.Update(gameTime);
+        }
         public override void Draw()
         {
             var drawer = Drawer.Default;
-            if (GameObjectManager.Instance.Find<Player>()[0].HasKey)
-            {
-                base.Draw(drawer);
-            }
+            drawer.Rectangle = rectangle;
+            base.Draw(drawer);
         }
     }
 }
