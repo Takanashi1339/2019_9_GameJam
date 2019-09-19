@@ -20,7 +20,7 @@ namespace GameJam9.Actor
             : base("bat1", position, new Point(32, 64), 10)
         {
             Gravity = 0;
-            Velocity = new Vector2(flySpeed, upSpeed);
+            //Velocity = new Vector2(flySpeed, upSpeed);
             rlTimer = new Timer(2, true);
             udTimer = new Timer(0.6f, true);
             movetimer = new Timer(30f, false);
@@ -59,8 +59,8 @@ namespace GameJam9.Actor
                 }
                 Velocity = new Vector2(flySpeed, upSpeed);
                 animation.Update(gameTime);
-                base.Update(gameTime);
             }
+            base.Update(gameTime);
         }
 
         public override void Draw()
