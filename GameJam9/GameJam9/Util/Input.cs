@@ -14,10 +14,10 @@ namespace GameJam9.Util
     static class Input
     {
         //移動キー
-        private static readonly Keys Up = Keys.W;
-        private static readonly Keys Down = Keys.S;
-        private static readonly Keys Left = Keys.A;
-        private static readonly Keys Right = Keys.D;
+        public static readonly Keys Up = Keys.Space;
+        public static readonly Keys Down = Keys.LeftShift;
+        public static readonly Keys Left = Keys.Left;
+        public static readonly Keys Right = Keys.Right;
         //移動量
         private static Vector2 velocity = Vector2.Zero;
         //キーボード
