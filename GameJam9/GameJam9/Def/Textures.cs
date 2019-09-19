@@ -17,6 +17,7 @@ namespace GameJam9.Def
             {
                 //{ "texture_name", Path},
                 { "test_block", Path },
+                { "tutorial", Path },
                 { "player_stand", Path },
                 { "player_walk", Path },
                 { "player_fly", Path },

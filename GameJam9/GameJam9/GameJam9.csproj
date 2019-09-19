@@ -62,6 +62,7 @@
     <Compile Include="Actor\ForestGrass.cs" />
     <Compile Include="Actor\Fox.cs" />
     <Compile Include="Actor\GameObject.cs" />
+    <Compile Include="Actor\InvisibleBlock.cs" />
     <Compile Include="Actor\Item.cs" />
     <Compile Include="Actor\Key.cs" />
     <Compile Include="Actor\KeyIcon.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Actor\TestBlock.cs" />
     <Compile Include="Actor\TestBullet.cs" />
     <Compile Include="Actor\TestEnemy01.cs" />
+    <Compile Include="Actor\TutorialBlock.cs" />
     <Compile Include="Actor\UI.cs" />
     <Compile Include="Def\MapDictionary.cs" />
     <Compile Include="Def\Screen.cs" />

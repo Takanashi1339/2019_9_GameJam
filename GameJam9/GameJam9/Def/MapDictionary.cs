@@ -34,6 +34,8 @@ namespace GameJam9.Def
             Data.Add("2d", new DirtWall());
             Data.Add("3", new ForestBlock());
             Data.Add("4", new TempleBlock());
+            Data.Add("t", new TutorialBlock());
+            Data.Add("i", new InvisibleBlock());
             Data.Add("g", new RandomGrass());
             Data.Add("fg", new ForestGrass());
             Data.Add("P", new Player(Vector2.Zero));
