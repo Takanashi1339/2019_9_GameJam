@@ -69,7 +69,6 @@ namespace GameJam9.Scene
             gameObjectManager.Add(map);
             keyIcon = new KeyIcon(Vector2.Zero);
             clock = new Clock(Vector2.Zero);
-            new Pointer(Vector2.Zero);
             backGrounds = new BackGround[] {
                 new BackGround1(Vector2.Zero, mapType),
                 new BackGroundStar(Vector2.Zero),

@@ -56,7 +56,12 @@ namespace GameJam9.Actor
             if (MoveLock)
             {
                 UpdateDisplayModify();
-                Velocity = Vector2.Zero;
+                velocity.X = 0;
+                Velocity = velocity;
+                if (isJump)
+                {
+                    base.Update(gameTime);
+                }
                 return;
             }
             if (Input.GetKeyTrigger(Keys.W) && !isJump)
