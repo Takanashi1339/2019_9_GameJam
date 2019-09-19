@@ -19,6 +19,9 @@
 #begin CSV/Maptest2.csv
 /copy:CSV/Maptest2.csv
 
+#begin CSV/Maptest3.csv
+/copy:CSV/Maptest3.csv
+
 #begin Texture/attack_magic_enemy.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -198,6 +201,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Texture/dirt_block.png
+
+#begin Texture/dirt_wall.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Texture/dirt_wall.png
 
 #begin Texture/door.png
 /importer:TextureImporter

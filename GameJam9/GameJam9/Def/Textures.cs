@@ -37,6 +37,7 @@ namespace GameJam9.Def
                 { "forest_block2", Path },
                 { "forest_block3", Path },
                 { "dirt_block", Path },
+                { "dirt_wall", Path },
                 { "bird",Path},
                 { "flower1", Path },
                 { "flower2", Path },
