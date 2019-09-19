@@ -17,7 +17,7 @@ namespace GameJam9.Actor
         private float upSpeed = 1f;
 
         public Bat(Vector2 position)
-            : base("bat", position, new Point(64, 64), 10)
+            : base("bat1", position, new Point(32, 64), 10)
         {
             Gravity = 0;
             Velocity = new Vector2(flySpeed, upSpeed);
@@ -33,7 +33,7 @@ namespace GameJam9.Actor
 
         public override Entity Spawn(Map map, Vector2 position)
         {
-            animation = new Animation(Size, 2, 0.1f);
+            animation = new Animation(new Point(64,64), 2, 0.1f);
             return base.Spawn(map, position);
         }
 
@@ -66,7 +66,7 @@ namespace GameJam9.Actor
         public override void Draw()
         {
             var drawer = Drawer.Default;
-            drawer.Rectangle = animation.GetRectangle();
+
             if(!movetimer.IsTime)
             {
                 Name = "bat1";
@@ -74,6 +74,8 @@ namespace GameJam9.Actor
             else
             {
                 Name = "bat";
+                Size = new Point(64, 64);
+                drawer.Rectangle = animation.GetRectangle();
             }
             if (Velocity.X > 0)
             {
