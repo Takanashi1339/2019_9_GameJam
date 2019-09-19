@@ -12,7 +12,7 @@ namespace GameJam9.Actor
     class Fade : GameObject
     {
         private Vector2 scale;
-        private float scaleRate = 0.1f;
+        private float scaleRate = 0.15f;
         private float alpha;
         private float alphaSpeed = 0.05f;
         private FadeOption option;
