@@ -64,7 +64,7 @@ namespace GameJam9.Actor
                 }
                 return;
             }
-            if (Input.GetKeyTrigger(Keys.W) && !isJump)
+            if (Input.GetKeyTrigger(Input.Up) && !isJump)
             {
                 velocity.Y = -10.0f;//仮の移動量
                 isJump = true;
@@ -121,7 +121,7 @@ namespace GameJam9.Actor
             {
                 HasKey = true;
             }
-            if(gameObject is Door && HasKey)
+            if(gameObject is Door && HasKey || Clock.Instance.IsTime)
             {
                 MoveLock = true;
             }
