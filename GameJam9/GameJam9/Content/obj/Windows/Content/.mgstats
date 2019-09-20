@@ -1,6 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest.csv","CopyItem","File",2533,2533,0.0009986
-"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest3.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest3.csv","CopyItem","File",3259,3259,0.0049884
+"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest.csv","CopyItem","File",2531,2531,0.0019595
+"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest3.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest3.csv","CopyItem","File",3258,3258,0.0010432
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/attack_magic_enemy.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/attack_magic_enemy.xnb","TextureProcessor","Texture2DContent",1486,32853,0.1012358
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/bat.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/bat.xnb","TextureProcessor","Texture2DContent",9642,32853,0.008976
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/bat1.png","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/bat1.xnb","TextureProcessor","Texture2DContent",1111,8277,0.1097059
