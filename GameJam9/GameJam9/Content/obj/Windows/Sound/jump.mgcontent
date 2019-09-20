@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Sound/jump.wav</SourceFile>
-  <SourceTime>2019-09-20T14:00:17.8976892+09:00</SourceTime>
+  <SourceTime>2019-09-20T14:38:50.9907758+09:00</SourceTime>
   <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Sound/jump.xnb</DestFile>
-  <DestTime>2019-09-20T14:00:46.6182504+09:00</DestTime>
+  <DestTime>2019-09-20T14:52:18.4806708+09:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

@@ -28,12 +28,6 @@
 /processorParam:Quality=Best
 /build:Sound/forest.mp3
 
-#begin Sound/forest.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
-/processorParam:Quality=Best
-/build:Sound/forest.mp3
-
 #begin Sound/hitenemy.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
@@ -46,18 +40,6 @@
 /processorParam:Quality=Best
 /build:Sound/jump.wav
 
-#begin Sound/jump.wav
-/importer:WavImporter
-/processor:SoundEffectProcessor
-/processorParam:Quality=Best
-/build:Sound/jump.wav
-
-#begin Sound/plain.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
-/processorParam:Quality=Best
-/build:Sound/plain.mp3
-
 #begin Sound/plain.mp3
 /importer:Mp3Importer
 /processor:SongProcessor
@@ -69,18 +51,6 @@
 /processor:SongProcessor
 /processorParam:Quality=Best
 /build:Sound/temple.mp3
-
-#begin Sound/temple.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
-/processorParam:Quality=Best
-/build:Sound/temple.mp3
-
-#begin Sound/titleBGM.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
-/processorParam:Quality=Best
-/build:Sound/titleBGM.mp3
 
 #begin Sound/titleBGM.mp3
 /importer:Mp3Importer
