@@ -11,10 +11,12 @@ namespace GameJam9.Def
         //テクスチャディレクトリのデフォルトパス
         public static readonly string Path = "./Sound/";
 
-        //SE(MP3)読み込み対象データ
+        //SE(wav)読み込み対象データ
         public static readonly string[,] SEData = new string[,]
         {
             //{ "se_name", Path },
+            { "jump", Path },
+            { "hitenemy", Path },
 
             //必要に応じて自分で追加
         };
@@ -24,6 +26,10 @@ namespace GameJam9.Def
         public static readonly string[,] BGMData = new string[,]
         {
             //{ "bgm_name", Path },
+            { "titleBGM" ,Path },
+            { "plain" , Path },
+            { "forest" ,Path },
+            { "temple", Path },
 
             //必要に応じて自分で追加
         };

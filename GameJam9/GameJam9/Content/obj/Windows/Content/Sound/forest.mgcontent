@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Sound/forest.mp3</SourceFile>
+  <SourceTime>2019-09-20T13:22:44.8069163+09:00</SourceTime>
+  <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Sound/forest.xnb</DestFile>
+  <DestTime>2019-09-20T13:57:33.7236545+09:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2018-12-09T01:35:54+09:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Sound/forest.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

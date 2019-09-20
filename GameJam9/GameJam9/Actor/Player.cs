@@ -19,6 +19,7 @@ namespace GameJam9.Actor
         private bool isLeft;
         private float speed;
         private Animation animation;
+        private Sound sound;
 
         public bool MoveLock
         {
@@ -39,6 +40,7 @@ namespace GameJam9.Actor
             animation = new Animation(Size, 4, 0.1f);
             speed = 3f;
             shiftable = false;
+            sound = GameDevice.Instance().GetSound();
         }
 
         public Player(Player other)
@@ -67,6 +69,7 @@ namespace GameJam9.Actor
             if (Input.GetKeyTrigger(Input.Up) && !isJump)
             {
                 velocity.Y = -10.0f;//仮の移動量
+                sound.PlaySE("jump");
                 isJump = true;
             }
             if(Input.Velocity().X < 0 && Velocity.X > -speed
@@ -115,6 +118,7 @@ namespace GameJam9.Actor
             if (gameObject is Enemy enemy)
             {
                 Velocity = new Vector2(Math.Sign(Position.X+Size.X/2 - (enemy.Position.X + enemy.Size.X / 2)) * 14f, -10f);
+                sound.PlaySE("hitenemy");
                 isJump = true;
             }
             if(gameObject is DropItem dropItem && dropItem.Item is Key)

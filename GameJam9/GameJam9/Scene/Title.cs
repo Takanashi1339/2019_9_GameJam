@@ -14,12 +14,12 @@ namespace GameJam9.Scene
     {
         private bool isEndFlag;
         private Renderer renderer;
+        private Sound sound;
 
         public Title()
         {
             isEndFlag = false;
             renderer = Renderer.Instance;
-            
         }
 
         public void Draw()
@@ -37,6 +37,8 @@ namespace GameJam9.Scene
         public void Initialize()
         {
             isEndFlag = false;
+            sound = GameDevice.Instance().GetSound();
+            sound.PlayBGM("titleBGM");
         }
 
         public bool IsEnd()
@@ -51,6 +53,7 @@ namespace GameJam9.Scene
 
         public void Shutdown()
         {
+            sound.StopBGM();
         }
 
         public void Update(GameTime gameTime)

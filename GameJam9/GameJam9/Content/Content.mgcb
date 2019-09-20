@@ -22,6 +22,72 @@
 #begin CSV/Maptest3.csv
 /copy:CSV/Maptest3.csv
 
+#begin Sound/forest.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/forest.mp3
+
+#begin Sound/forest.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/forest.mp3
+
+#begin Sound/hitenemy.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/hitenemy.wav
+
+#begin Sound/jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/jump.wav
+
+#begin Sound/jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/jump.wav
+
+#begin Sound/plain.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/plain.mp3
+
+#begin Sound/plain.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/plain.mp3
+
+#begin Sound/temple.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/temple.mp3
+
+#begin Sound/temple.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/temple.mp3
+
+#begin Sound/titleBGM.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/titleBGM.mp3
+
+#begin Sound/titleBGM.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sound/titleBGM.mp3
+
 #begin Texture/attack_magic_enemy.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -874,7 +940,7 @@
 /processorParam:TextureFormat=Color
 /build:Texture/tutorial.png
 
-#begin Texture/zenmaisou.png
+#begin Texture/Zenmaisou.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -884,5 +950,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Texture/zenmaisou.png
+/build:Texture/Zenmaisou.png
 

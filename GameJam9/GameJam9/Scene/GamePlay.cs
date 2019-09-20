@@ -20,6 +20,7 @@ namespace GameJam9.Scene
         private Clock clock;
         private KeyIcon keyIcon;
         private Fade fade;
+        private Sound sound;
 
         private GameObjectManager gameObjectManager;
         private ParticleManager particleManager;
@@ -56,6 +57,7 @@ namespace GameJam9.Scene
             particleManager.Initialize();
             uiManager.Initialize();
             mapType = MapDictionary.MapType.Plain;
+            sound = GameDevice.Instance().GetSound();
             LoadMap(mapType);
         }
 
@@ -114,10 +116,23 @@ namespace GameJam9.Scene
                 }
                 else
                 {
+                    sound.StopBGM();
                     LoadMap(mapType);
                 }
             }
 
+            if(mapType == MapDictionary.MapType.Forest)
+            {
+                sound.PlayBGM("forest");
+            }
+            if(mapType == MapDictionary.MapType.Plain)
+            {
+                sound.PlayBGM("plain");
+            }
+            if(mapType == MapDictionary.MapType.Temple)
+            {
+                sound.PlayBGM("temple");
+            }
             if (clock.IsEnd)
             {
                 //再スタート
