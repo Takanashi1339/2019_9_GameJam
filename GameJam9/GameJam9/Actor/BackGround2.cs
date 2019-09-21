@@ -18,7 +18,7 @@ namespace GameJam9.Actor
             "BGt2",
         };
         public BackGround2(Vector2 position, MapDictionary.MapType type)
-            : base(names[(int)type], position, 0.1f)
+            : base(names[(int)type], position, 0.3f)
         {
         }
 
