@@ -76,7 +76,7 @@ namespace GameJam9.Scene
             clock = new Clock(Vector2.Zero);
             backGrounds = new BackGround[] {
                 new BackGround1(Vector2.Zero, mapType),
-                new BackGroundStar(Vector2.Zero),
+                new BackGroundStar(Vector2.Zero, mapType),
                 new BackGround2(Vector2.Zero, mapType),
                 new BackGround3(Vector2.Zero, mapType),
             };

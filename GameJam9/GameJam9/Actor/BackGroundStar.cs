@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameJam9.Def;
 using GameJam9.Util;
 using Microsoft.Xna.Framework;
 
@@ -10,6 +11,7 @@ namespace GameJam9.Actor
 {
     class BackGroundStar : BackGround
     {
+        private MapDictionary.MapType type;
         private float starAlpha;
         private float StarAlpha
         {
@@ -24,15 +26,16 @@ namespace GameJam9.Actor
                 if (value < 0) starAlpha = 0;
             }
         }
-        public BackGroundStar(Vector2 position) 
+        public BackGroundStar(Vector2 position, MapDictionary.MapType type) 
             : base("BGS", position, 0.1f)
         {
+            this.type = type;
             StarAlpha = 0f;
             isSkyColor = false;
         }
 
         public BackGroundStar(BackGroundStar other)
-            :this(other.Position)
+            :this(other.Position, other.type)
         { }
         public override object Clone()
         {
@@ -41,6 +44,10 @@ namespace GameJam9.Actor
 
         public override void Draw()
         {
+            if (type == MapDictionary.MapType.Temple)
+            {
+                return;
+            }
             var drawer = Drawer.Default;
             drawer.Alpha = StarAlpha;
             base.Draw(drawer);
