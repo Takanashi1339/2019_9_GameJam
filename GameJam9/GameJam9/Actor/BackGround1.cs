@@ -15,7 +15,7 @@ namespace GameJam9.Actor
         {
             "BG1",
             "BGf1",
-            "BG1",
+            "BGt1",
         };
 
         public BackGround1(Vector2 position, MapDictionary.MapType type)
