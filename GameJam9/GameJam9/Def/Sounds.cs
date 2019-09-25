@@ -17,6 +17,8 @@ namespace GameJam9.Def
             //{ "se_name", Path },
             { "jump", Path },
             { "hitenemy", Path },
+            { "key_get", Path },
+            { "door_open", Path },
 
             //必要に応じて自分で追加
         };
