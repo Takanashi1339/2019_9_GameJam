@@ -1,4 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest2.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest2.csv","CopyItem","File",3329,3329,0.0019513
+"D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/CSV/Maptest3.csv","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content\CSV/Maptest3.csv","CopyItem","File",3258,3258,0.0019943
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Sound/forest.mp3","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Sound/forest.xnb","SongProcessor","SongContent",1723170,124,0.9809485
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Sound/hitenemy.wav","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Sound/hitenemy.xnb","SoundEffectProcessor","SoundEffectContent",219246,219273,0.4507472
 "D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Sound/jump.wav","D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Sound/jump.xnb","SoundEffectProcessor","SoundEffectContent",60006,60009,0.4473873
