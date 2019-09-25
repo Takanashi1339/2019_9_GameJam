@@ -123,10 +123,12 @@ namespace GameJam9.Actor
             }
             if(gameObject is DropItem dropItem && dropItem.Item is Key)
             {
+                sound.PlaySE("key_get");
                 HasKey = true;
             }
-            if(gameObject is Door && HasKey || Clock.Instance.IsTime)
+            if((gameObject is Door && HasKey || Clock.Instance.IsTime )&& !MoveLock)
             {
+                sound.PlaySE("door_open");
                 MoveLock = true;
             }
             UpdateDisplayModify();
