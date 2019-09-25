@@ -131,7 +131,7 @@ namespace GameJam9.Actor
                 sound.PlaySE("door_open");
                 MoveLock = true;
             }
-            if(Clock.Instance.IsTime)
+            if(Clock.Instance.IsTime && !MoveLock)
             {
                 sound.PlaySE("clock_reverse");
                 MoveLock = true;
