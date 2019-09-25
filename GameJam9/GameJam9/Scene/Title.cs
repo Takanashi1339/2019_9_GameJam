@@ -15,11 +15,14 @@ namespace GameJam9.Scene
         private bool isEndFlag;
         private Renderer renderer;
         private Sound sound;
+        private Timer timer;
+        private bool pressVisible;
 
         public Title()
         {
             isEndFlag = false;
             renderer = Renderer.Instance;
+
         }
 
         public void Draw()
@@ -28,7 +31,13 @@ namespace GameJam9.Scene
 
             renderer.Begin();
 
-            renderer.DrawTexture("title", Vector2.Zero,Drawer.Default);
+            renderer.DrawTexture("title", new Vector2(75,0),Drawer.Default);
+
+            if (pressVisible)
+            {
+                renderer.DrawTexture("press_enter", new Vector2(100, 500), Drawer.Default);
+            }
+
 
             renderer.End();
 
@@ -39,6 +48,8 @@ namespace GameJam9.Scene
             isEndFlag = false;
             sound = GameDevice.Instance().GetSound();
             sound.PlayBGM("titleBGM");
+            timer = new Timer(0.4f, true);
+            pressVisible = true;
         }
 
         public bool IsEnd()
@@ -62,6 +73,14 @@ namespace GameJam9.Scene
             {
                 //シーン移動
                 isEndFlag = true;
+            }
+            else
+            {
+                timer.Update(gameTime);
+                if(timer.IsTime)
+                {
+                    pressVisible = !pressVisible;
+                }
             }
         }
     }

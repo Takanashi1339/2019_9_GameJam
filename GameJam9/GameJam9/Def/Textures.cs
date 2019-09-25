@@ -78,6 +78,7 @@ namespace GameJam9.Def
                 { "bat" ,Path },
                 { "bat1",Path },
                 { "fade" ,Path},
+                { "press_enter",Path },
 
                 //必要に応じて自分で追加
             };
