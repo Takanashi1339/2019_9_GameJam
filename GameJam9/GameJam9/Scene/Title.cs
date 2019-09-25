@@ -7,6 +7,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using GameJam9.Device;
 using GameJam9.Util;
+using GameJam9.Manager;
+using GameJam9.Actor;
+using GameJam9.Def;
 
 namespace GameJam9.Scene
 {
@@ -17,6 +20,7 @@ namespace GameJam9.Scene
         private Sound sound;
         private Timer timer;
         private bool pressVisible;
+        private BackGround[] backGrounds;
 
         public Title()
         {
@@ -30,6 +34,8 @@ namespace GameJam9.Scene
             GameDevice.Instance().GetGraphicsDevice().Clear(Color.Aqua);
 
             renderer.Begin();
+
+            Array.ForEach(backGrounds, bg => bg.Draw());
 
             renderer.DrawTexture("title", new Vector2(75,0),Drawer.Default);
 
@@ -50,6 +56,13 @@ namespace GameJam9.Scene
             sound.PlayBGM("titleBGM");
             timer = new Timer(0.4f, true);
             pressVisible = true;
+            new Clock(Vector2.Zero);
+            backGrounds = new BackGround[] {
+                new BackGround1(Vector2.Zero, MapDictionary.MapType.Plain),
+                new BackGroundStar(Vector2.Zero, MapDictionary.MapType.Plain),
+                new BackGround2(Vector2.Zero, MapDictionary.MapType.Plain),
+                new BackGround3(Vector2.Zero, MapDictionary.MapType.Plain),
+            };
         }
 
         public bool IsEnd()
@@ -76,6 +89,8 @@ namespace GameJam9.Scene
             }
             else
             {
+                GameDevice.Instance().DisplayModify += new Vector2(-3, 0);
+                Array.ForEach(backGrounds, bg => bg.Update(gameTime));
                 timer.Update(gameTime);
                 if(timer.IsTime)
                 {
