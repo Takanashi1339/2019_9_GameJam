@@ -19,6 +19,7 @@ namespace GameJam9.Def
             { "hitenemy", Path },
             { "key_get", Path },
             { "door_open", Path },
+            { "clock_reverse", Path },
 
             //必要に応じて自分で追加
         };

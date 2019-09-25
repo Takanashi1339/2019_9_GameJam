@@ -126,12 +126,17 @@ namespace GameJam9.Actor
                 sound.PlaySE("key_get");
                 HasKey = true;
             }
-            if((gameObject is Door && HasKey || Clock.Instance.IsTime )&& !MoveLock)
+            if(gameObject is Door && HasKey && !MoveLock)
             {
                 sound.PlaySE("door_open");
                 MoveLock = true;
             }
-            UpdateDisplayModify();
+            if(Clock.Instance.IsTime)
+            {
+                sound.PlaySE("clock_reverse");
+                MoveLock = true;
+            }
+                UpdateDisplayModify();
         }
 
         public override void Draw()

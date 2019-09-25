@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Sound/clock_reverse.wav</SourceFile>
+  <SourceTime>2019-09-25T09:14:24+09:00</SourceTime>
+  <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Sound/clock_reverse.xnb</DestFile>
+  <DestTime>2019-09-25T15:43:42.3787888+09:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2018-12-09T01:35:54+09:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
