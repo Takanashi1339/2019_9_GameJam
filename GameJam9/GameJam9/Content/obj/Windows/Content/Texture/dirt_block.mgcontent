@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/dirt_block.png</SourceFile>
-  <SourceTime>2019-09-12T15:33:37.6846338+09:00</SourceTime>
-  <DestFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/dirt_block.xnb</DestFile>
-  <DestTime>2019-09-25T12:11:32.7409702+09:00</DestTime>
+  <SourceFile>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/dirt_block.png</SourceFile>
+  <SourceTime>2019-09-12T15:25:17.7867588+09:00</SourceTime>
+  <DestFile>D:/K019G1339/1年/GameJam9/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Content/Texture/dirt_block.xnb</DestFile>
+  <DestTime>2019-09-25T12:27:00.9478752+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

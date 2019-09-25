@@ -14,6 +14,14 @@ namespace GameJam9.Scene
     {
         private bool isEndFlag;
         private Renderer renderer;
+        private int star;
+        private float Alpha
+        {
+            get
+            {
+                return (float)Math.Sin((float)star / 10f);
+            }
+        }
 
         public Ending()
         {
@@ -25,7 +33,9 @@ namespace GameJam9.Scene
         {
             GameDevice.Instance().GetGraphicsDevice().Clear(Color.Black);
             renderer.Begin();
-
+            var drawer = Drawer.Default;
+            drawer.Alpha = Alpha;
+            renderer.DrawTexture("BGS", Vector2.Zero, drawer);
             renderer.DrawTexture("ending", Vector2.Zero, Drawer.Default);
 
             renderer.End();
@@ -34,6 +44,8 @@ namespace GameJam9.Scene
         public void Initialize()
         {
             isEndFlag = false;
+            star = 0;
+
         }
 
         public bool IsEnd()
@@ -56,6 +68,10 @@ namespace GameJam9.Scene
             {
                 //シーン移動
                 isEndFlag = true;
+            }
+            else
+            {
+                star++;
             }
         }
     }
