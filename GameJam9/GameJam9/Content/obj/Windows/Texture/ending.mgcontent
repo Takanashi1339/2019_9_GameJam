@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/ending.png</SourceFile>
-  <SourceTime>2019-09-19T13:55:58.0345423+09:00</SourceTime>
-  <DestFile>D:/9月ゲームジャム/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Texture/ending.xnb</DestFile>
-  <DestTime>2019-09-23T15:22:55.5359371+09:00</DestTime>
+  <SourceFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/Texture/ending.png</SourceFile>
+  <SourceTime>2019-09-19T13:26:54.1054549+09:00</SourceTime>
+  <DestFile>C:/K019G1239/1学年/GameJum/2019_9_GameJam/GameJam9/GameJam9/Content/bin/Windows/Texture/ending.xnb</DestFile>
+  <DestTime>2019-09-25T11:03:07.6455592+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
